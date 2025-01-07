@@ -1,0 +1,100 @@
+{% extends 'Logis/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Lista de Seções</h2>
+    </div>
+    <div class="card-body">
+        <!-- Search Form -->
+        <form method="get" class="mb-3">
+            <input type="text" name="q" class="form-control" placeholder="Buscar..." value="{{ query }}">
+        </form>
+
+        <!-- Seções Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Código da Seção</th>
+                    <th>Zona Eleitoral</th>
+                    <th>Código do Município</th>
+                    <th>Código Local</th>
+                    <th>Seção Especial</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for secao in secoes %}
+                <tr>
+                    <td>{{ secao.cod_secao }}</td>
+                    <td>{{ secao.cod_zona.nome }}</td>
+                    <td>{{ secao.cod_municipio }}</td>
+                    <td>{{ secao.cod_local }}</td>
+                    <td>{{ secao.ind_especial }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="5" class="text-center">Nenhuma seção cadastrada.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                <!-- Previous Page -->
+                {% if secoes.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ secoes.previous_page_number }}{% if query %}&q={{ query }}{% endif %}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <span class="page-link">&laquo;</span>
+                </li>
+                {% endif %}
+        
+                <!-- Page Numbers -->
+                {% if 1 not in page_range %}
+                <li class="page-item">
+                    <a class="page-link" href="?page=1{% if query %}&q={{ query }}{% endif %}">1</a>
+                </li>
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+                {% endif %}
+        
+                {% for num in page_range %}
+                <li class="page-item {% if secoes.number == num %}active{% endif %}">
+                    <a class="page-link" href="?page={{ num }}{% if query %}&q={{ query }}{% endif %}">{{ num }}</a>
+                </li>
+                {% endfor %}
+        
+                {% if total_pages not in page_range %}
+                <li class="page-item disabled">
+                    <span class="page-link">...</span>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ total_pages }}{% if query %}&q={{ query }}{% endif %}">{{ total_pages }}</a>
+                </li>
+                {% endif %}
+        
+                <!-- Next Page -->
+                {% if secoes.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ secoes.next_page_number }}{% if query %}&q={{ query }}{% endif %}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <span class="page-link">&raquo;</span>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+        
+    </div>
+</div>
+{% endblock %}

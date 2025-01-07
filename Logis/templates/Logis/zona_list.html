@@ -1,0 +1,31 @@
+{% extends 'Logis/base.html' %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Lista de Zonas Eleitorais</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Nome da Zona</th>
+                    <th>Quantidade de Seções</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for zona in zonas %}
+                <tr>
+                    <td>{{ zona.nome }}</td>
+                    <td>{{ zona.qtdSecoes }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="2" class="text-center">Nenhuma zona eleitoral cadastrada.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

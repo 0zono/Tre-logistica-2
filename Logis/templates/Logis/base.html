@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Logística Eleitoral{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{}">Logística Eleitoral</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <!-- Listar Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownListar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Listar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownListar">
+                        <a class="dropdown-item" href="{% url 'municipio_list' %}">Listar Municípios</a>
+                        <a class="dropdown-item" href="{% url 'urna_list' %}">Listar Urnas</a>
+                        <a class="dropdown-item" href="{% url 'secao_list' %}">Listar Seções</a>
+                        <a class="dropdown-item" href="{% url 'zona_list' %}">Listar Zonas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="Adicionar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Funcionalidades
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="Adicionar">
+                        <a class="dropdown-item" href="{% url 'uploadFile' %}">Upload dados Excel</a>
+                        <a class="dropdown-item" href="{% url 'distribuicao_page' %}">Distribuir Urnas</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

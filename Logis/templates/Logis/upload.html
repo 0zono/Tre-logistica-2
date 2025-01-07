@@ -1,0 +1,54 @@
+{% extends 'Logis/base.html' %}
+
+{% block title %}Upload de Arquivo{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Upload de Arquivo Excel</h2>
+    <form id="uploadForm" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </form>
+    <div id="progressContainer" class="mt-3" style="display:none;">
+        <div class="progress">
+            <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+                0%
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var form = event.target;
+        var data = new FormData(form);
+        var xhr = new XMLHttpRequest();
+
+        xhr.open('POST', form.action, true);
+
+        xhr.upload.addEventListener('progress', function(event) {
+            if (event.lengthComputable) {
+                var percentComplete = Math.round((event.loaded / event.total) * 100);
+                var progressBar = document.getElementById('progressBar');
+                progressBar.style.width = percentComplete + '%';
+                progressBar.innerHTML = percentComplete + '%';
+            }
+        });
+
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+                // Handle successful upload here
+                alert('Upload completo!');
+                window.location.reload(); // Optional: Reload the page after upload
+            }
+        };
+
+        document.getElementById('progressContainer').style.display = 'block';
+        xhr.send(data);
+    });
+</script>
+{% endblock %}
