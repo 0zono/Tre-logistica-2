@@ -47,6 +47,7 @@ class Urna(models.Model):
     bio = models.BooleanField(default=True)  # Suporte a biometria
     zona_eleitoral = models.ForeignKey(ZonaEleitoral, on_delete=models.CASCADE)  # Urna pertence a uma zona eleitoral
     qtd = models.IntegerField(default=0)
+    contingencia = models.BooleanField(default=False)
 
     def __str__(self):
         return self.modelo
@@ -62,3 +63,4 @@ class DistributionLog(models.Model):
     urna = models.ForeignKey(Urna, on_delete=models.CASCADE)
     quantity = models.IntegerField()
     distribution_type = models.CharField(max_length=50)
+    

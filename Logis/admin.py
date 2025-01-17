@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Municipio, ZonaEleitoral, Secao, Urna, Distribuicao
+from .models import Municipio, ZonaEleitoral, Secao, Urna, Distribuicao, DistributionLog
 
 # Register your models here.
 
@@ -20,7 +20,7 @@ class SecaoAdmin(admin.ModelAdmin):
 
 @admin.register(Urna)
 class UrnaAdmin(admin.ModelAdmin):
-    list_display = ('modelo', 'bio', 'zona_eleitoral', 'qtd')
+    list_display = ('modelo', 'bio', 'zona_eleitoral', 'qtd', 'contingencia')
     list_filter = ('modelo', 'bio')
     search_fields = ('modelo', 'zona_eleitoral__nome')
 

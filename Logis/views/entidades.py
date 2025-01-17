@@ -2,6 +2,7 @@ from django.shortcuts import render
 from ..models import Urna, Municipio, Secao, ZonaEleitoral
 from django.core.paginator import Paginator
 from django.db.models import Q
+from django.db.models import Sum
 
 def urna_list(request):
     query = request.GET.get('q', '')
@@ -13,11 +14,13 @@ def urna_list(request):
             Q(zona_eleitoral__nome__icontains=query)
         )
 
-    paginator = Paginator(urna_queryset, 10)  # Show 10 items per page
+    # Use aggregate for the total before pagination
+    total_urnas = urna_queryset.aggregate(total=Sum('qtd'))['total'] or 0
+
+    paginator = Paginator(urna_queryset, 10)
     page_number = request.GET.get('page')
     urnas = paginator.get_page(page_number)
-
-    # Calculate the visible page range
+    
     current_page = urnas.number
     total_pages = paginator.num_pages
     page_range = [
@@ -27,11 +30,11 @@ def urna_list(request):
 
     return render(request, 'Logis/urna_list.html', {
         'urnas': urnas,
+        'total_urnas': total_urnas,
         'query': query,
-        'page_range': page_range,
-        'total_pages': total_pages,
+        'page_range': paginator.page_range,
+        'total_pages': paginator.num_pages,
     })
-
 
 def municipio_list(request):
     municipios = Municipio.objects.all()
@@ -70,4 +73,11 @@ def secao_list(request):
 
 def zona_list(request):
     zonas = ZonaEleitoral.objects.all()
-    return render(request, 'Logis/zona_list.html', {'zonas': zonas})
+    total_secoes = sum(zona.qtdSecoes for zona in zonas)  # Calculate the total
+    return render(request, 'Logis/zona_list.html', {'zonas': zonas, 'total_secoes': total_secoes})
+
+def zona_list2(request):
+    zonas = ZonaEleitoral.objects.all()
+    total_secoes = sum(zona.qtdSecoes for zona in zonas)  # Calculate the total
+    return render(request, 'Logis/zona_list2.html', {'zonas': zonas, 'total_secoes': total_secoes})
+

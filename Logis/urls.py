@@ -7,6 +7,7 @@ urlpatterns = [
     path('municipios/', entidades.municipio_list, name='municipio_list'),
     path('secoes/', entidades.secao_list, name='secao_list'),
     path('zonas/', entidades.zona_list, name='zona_list'),
+    path('zonas_cards/', entidades.zona_list2, name='zona_list2'),
     path('upload/', upload.upload_file, name='uploadFile'),
     path('upload/success/', TemplateView.as_view(template_name="success.html"), name='upload_success'),
     path('limpar_tudo/', erase.delete_all_data, name='delete_all_data'),

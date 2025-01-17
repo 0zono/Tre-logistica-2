@@ -6,26 +6,116 @@
         <h2>Lista de Zonas Eleitorais</h2>
     </div>
     <div class="card-body">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Nome da Zona</th>
-                    <th>Quantidade de Seções</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for zona in zonas %}
-                <tr>
-                    <td>{{ zona.nome }}</td>
-                    <td>{{ zona.qtdSecoes }}</td>
-                </tr>
-                {% empty %}
-                <tr>
-                    <td colspan="2" class="text-center">Nenhuma zona eleitoral cadastrada.</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th rowspan="2">Nome da Zona</th>
+                        <th rowspan="2">Quantidade de Seções</th>
+                        <th colspan="4" class="text-center">Urnas Regulares</th>
+                        <th colspan="4" class="text-center">Urnas de Contingência</th>
+                    </tr>
+                    <tr>
+                        <th class="text-center">2022</th>
+                        <th class="text-center">2020</th>
+                        <th class="text-center">2015</th>
+                        <th class="text-center">2013</th>
+                        <th class="text-center">2022</th>
+                        <th class="text-center">2020</th>
+                        <th class="text-center">2015</th>
+                        <th class="text-center">2013</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for zona in zonas %}
+                    <tr>
+                        <td>{{ zona.nome }}</td>
+                        <td class="text-center">{{ zona.qtdSecoes }}</td>
+                        
+                        <!-- Urnas Regulares -->
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2022' and not urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2020' and not urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2015' and not urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2013' and not urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        
+                        <!-- Urnas de Contingência -->
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2022' and urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2020' and urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2015' and urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                        <td class="text-center">
+                            {% for urna in zona.urna_set.all %}
+                                {% if urna.modelo == '2013' and urna.contingencia %}
+                                    {{ urna.qtd }}
+                                {% endif %}
+                            {% endfor %}
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="10" class="text-center">Nenhuma zona eleitoral cadastrada.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+                <tfoot>
+                    <tr class="table-info">
+                        <td><strong>Totais:</strong></td>
+                        <td class="text-center"><strong>{{ total_secoes }}</strong></td>
+                        <!-- Totais Urnas Regulares -->
+                        <td class="text-center"><strong>{{ total_urnas_2022 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_urnas_2020 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_urnas_2015 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_urnas_2013 }}</strong></td>
+                        <!-- Totais Urnas de Contingência -->
+                        <td class="text-center"><strong>{{ total_contingencia_2022 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_contingencia_2020 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_contingencia_2015 }}</strong></td>
+                        <td class="text-center"><strong>{{ total_contingencia_2013 }}</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </div>
 {% endblock %}

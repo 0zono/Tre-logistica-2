@@ -1,0 +1,138 @@
+{% extends 'Logis/base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Zonas Eleitorais</h2>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        {% for zona in zonas %}
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">{{ zona.nome }}</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6 class="text-muted">Seções Eleitorais</h6>
+                        <p class="h3">{{ zona.qtdSecoes }}</p>
+                    </div>
+
+                    <div class="row">
+                        <!-- Urnas Regulares -->
+                        <div class="col-12 mb-3">
+                            <h6 class="border-bottom pb-2">Urnas Regulares</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for urna in zona.urna_set.all %}
+                                    {% if not urna.contingencia and urna.qtd > 0 %}
+                                        <div class="badge bg-success text-wrap p-2">
+                                            {{ urna.modelo }}: {{ urna.qtd }}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- Urnas de Contingência -->
+                        <div class="col-12">
+                            <h6 class="border-bottom pb-2">Urnas de Contingência</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for urna in zona.urna_set.all %}
+                                    {% if urna.contingencia and urna.qtd > 0 %}
+                                        <div class="badge bg-warning text-dark text-wrap p-2">
+                                            {{ urna.modelo }}: {{ urna.qtd }}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <div class="row text-center">
+                        <div class="col">
+                            <small class="text-muted">
+                                Total de Urnas: 
+                                {% with total_urnas=0 %}
+                                    {% for urna in zona.urna_set.all %}
+                                        {% with new_total=total_urnas|add:urna.qtd %}
+                                            {% if forloop.last %}
+                                                {{ new_total }}
+                                            {% endif %}
+                                            {% with total_urnas=new_total %}
+                                            {% endwith %}
+                                        {% endwith %}
+                                    {% endfor %}
+                                {% endwith %}
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-info" role="alert">
+                Nenhuma zona eleitoral cadastrada.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Summary Card -->
+    <div class="row mt-4">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h5 class="card-title mb-0">Resumo Total</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <h6 class="text-muted">Total de Seções</h6>
+                            <p class="h3">{{ total_secoes }}</p>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6 class="text-muted">Urnas Regulares</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% if total_urnas_2022 > 0 %}
+                                    <div class="badge bg-success text-wrap p-2">2022: {{ total_urnas_2022 }}</div>
+                                {% endif %}
+                                {% if total_urnas_2020 > 0 %}
+                                    <div class="badge bg-success text-wrap p-2">2020: {{ total_urnas_2020 }}</div>
+                                {% endif %}
+                                {% if total_urnas_2015 > 0 %}
+                                    <div class="badge bg-success text-wrap p-2">2015: {{ total_urnas_2015 }}</div>
+                                {% endif %}
+                                {% if total_urnas_2013 > 0 %}
+                                    <div class="badge bg-success text-wrap p-2">2013: {{ total_urnas_2013 }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <h6 class="text-muted">Urnas de Contingência</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% if total_contingencia_2022 > 0 %}
+                                    <div class="badge bg-warning text-dark text-wrap p-2">2022: {{ total_contingencia_2022 }}</div>
+                                {% endif %}
+                                {% if total_contingencia_2020 > 0 %}
+                                    <div class="badge bg-warning text-dark text-wrap p-2">2020: {{ total_contingencia_2020 }}</div>
+                                {% endif %}
+                                {% if total_contingencia_2015 > 0 %}
+                                    <div class="badge bg-warning text-dark text-wrap p-2">2015: {{ total_contingencia_2015 }}</div>
+                                {% endif %}
+                                {% if total_contingencia_2013 > 0 %}
+                                    <div class="badge bg-warning text-dark text-wrap p-2">2013: {{ total_contingencia_2013 }}</div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

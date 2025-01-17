@@ -1,0 +1,2575 @@
+2025-01-15 10:18:40,030 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-15 10:18:40,030 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-15 10:18:40,031 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-15 10:18:40,031 - INFO - Total de zonas a receber urnas: 57
+2025-01-15 10:18:40,032 - INFO - Estoque disponível por modelo:
+2025-01-15 10:18:40,032 - INFO - Modelo 2022: 4000 unidades (Bio: True)
+2025-01-15 10:18:40,032 - INFO - Modelo 2020: 3000 unidades (Bio: True)
+2025-01-15 10:18:40,032 - INFO - Modelo 2015: 1410 unidades (Bio: True)
+2025-01-15 10:18:40,032 - INFO - Modelo 2013: 1408 unidades (Bio: True)
+2025-01-15 10:18:40,032 - INFO - Inventário inicial: {'2022': 4000, '2020': 3000, '2015': 1410, '2013': 1408}
+2025-01-15 10:18:40,033 - INFO - Removidas 0 urnas de distribuições anteriores
+2025-01-15 10:18:40,033 - INFO - 
+Iniciando distribuição para zona 31 - 39
+2025-01-15 10:18:40,033 - INFO - Necessidade da zona: 364 regulares + 43 contingência
+2025-01-15 10:18:40,033 - INFO - Alocadas 364 urnas regulares modelo 2022 (restam 3636 no estoque)
+2025-01-15 10:18:40,033 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,033 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,033 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,034 - INFO - Alocadas 43 urnas de contingência modelo 2022 (restam 3593 no estoque)
+2025-01-15 10:18:40,034 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,035 - INFO - Registro criado: 364 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,035 - INFO - Registro criado: 43 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,035 - INFO - 
+Iniciando distribuição para zona 1 - 1
+2025-01-15 10:18:40,036 - INFO - Necessidade da zona: 357 regulares + 42 contingência
+2025-01-15 10:18:40,036 - INFO - Alocadas 357 urnas regulares modelo 2022 (restam 3236 no estoque)
+2025-01-15 10:18:40,036 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,036 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,036 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,036 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 3194 no estoque)
+2025-01-15 10:18:40,036 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,037 - INFO - Registro criado: 357 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,037 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,037 - INFO - 
+Iniciando distribuição para zona 46 - 20
+2025-01-15 10:18:40,037 - INFO - Necessidade da zona: 355 regulares + 42 contingência
+2025-01-15 10:18:40,037 - INFO - Alocadas 355 urnas regulares modelo 2022 (restam 2839 no estoque)
+2025-01-15 10:18:40,037 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,037 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,037 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,038 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 2797 no estoque)
+2025-01-15 10:18:40,038 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,038 - INFO - Registro criado: 355 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,039 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,039 - INFO - 
+Iniciando distribuição para zona 33 - 51
+2025-01-15 10:18:40,039 - INFO - Necessidade da zona: 337 regulares + 40 contingência
+2025-01-15 10:18:40,039 - INFO - Alocadas 337 urnas regulares modelo 2022 (restam 2460 no estoque)
+2025-01-15 10:18:40,039 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,039 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,039 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,039 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 2420 no estoque)
+2025-01-15 10:18:40,039 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,040 - INFO - Registro criado: 337 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,040 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,040 - INFO - 
+Iniciando distribuição para zona 32 - 55
+2025-01-15 10:18:40,040 - INFO - Necessidade da zona: 334 regulares + 40 contingência
+2025-01-15 10:18:40,040 - INFO - Alocadas 334 urnas regulares modelo 2022 (restam 2086 no estoque)
+2025-01-15 10:18:40,040 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,040 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,040 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,041 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 2046 no estoque)
+2025-01-15 10:18:40,041 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,041 - INFO - Registro criado: 334 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,042 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,042 - INFO - 
+Iniciando distribuição para zona 56 - 22
+2025-01-15 10:18:40,042 - INFO - Necessidade da zona: 324 regulares + 38 contingência
+2025-01-15 10:18:40,042 - INFO - Alocadas 324 urnas regulares modelo 2022 (restam 1722 no estoque)
+2025-01-15 10:18:40,042 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,042 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,042 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,042 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 1684 no estoque)
+2025-01-15 10:18:40,043 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,043 - INFO - Registro criado: 324 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,043 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,043 - INFO - 
+Iniciando distribuição para zona 57 - 49
+2025-01-15 10:18:40,043 - INFO - Necessidade da zona: 319 regulares + 38 contingência
+2025-01-15 10:18:40,043 - INFO - Alocadas 319 urnas regulares modelo 2022 (restam 1365 no estoque)
+2025-01-15 10:18:40,043 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,043 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,043 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,044 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 1327 no estoque)
+2025-01-15 10:18:40,044 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,044 - INFO - Registro criado: 319 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,045 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,045 - INFO - 
+Iniciando distribuição para zona 9 - 9
+2025-01-15 10:18:40,045 - INFO - Necessidade da zona: 318 regulares + 38 contingência
+2025-01-15 10:18:40,045 - INFO - Alocadas 318 urnas regulares modelo 2022 (restam 1009 no estoque)
+2025-01-15 10:18:40,045 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,045 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,045 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,045 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 971 no estoque)
+2025-01-15 10:18:40,046 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,046 - INFO - Registro criado: 318 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,046 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,046 - INFO - 
+Iniciando distribuição para zona 54 - 46
+2025-01-15 10:18:40,046 - INFO - Necessidade da zona: 292 regulares + 35 contingência
+2025-01-15 10:18:40,046 - INFO - Alocadas 292 urnas regulares modelo 2022 (restam 679 no estoque)
+2025-01-15 10:18:40,046 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,046 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,046 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,047 - INFO - Alocadas 35 urnas de contingência modelo 2022 (restam 644 no estoque)
+2025-01-15 10:18:40,047 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,047 - INFO - Registro criado: 292 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,047 - INFO - Registro criado: 35 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,047 - INFO - 
+Iniciando distribuição para zona 40 - 10
+2025-01-15 10:18:40,048 - INFO - Necessidade da zona: 283 regulares + 33 contingência
+2025-01-15 10:18:40,048 - INFO - Alocadas 283 urnas regulares modelo 2022 (restam 361 no estoque)
+2025-01-15 10:18:40,048 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,048 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,048 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,048 - INFO - Alocadas 33 urnas de contingência modelo 2022 (restam 328 no estoque)
+2025-01-15 10:18:40,048 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,049 - INFO - Registro criado: 283 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,049 - INFO - Registro criado: 33 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,049 - INFO - 
+Iniciando distribuição para zona 49 - 19
+2025-01-15 10:18:40,049 - INFO - Necessidade da zona: 270 regulares + 32 contingência
+2025-01-15 10:18:40,049 - INFO - Alocadas 270 urnas regulares modelo 2022 (restam 58 no estoque)
+2025-01-15 10:18:40,049 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:18:40,049 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,049 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,050 - INFO - Alocadas 32 urnas de contingência modelo 2022 (restam 26 no estoque)
+2025-01-15 10:18:40,050 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,050 - INFO - Registro criado: 270 urnas modelo 2022 (regular)
+2025-01-15 10:18:40,051 - INFO - Registro criado: 32 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,051 - INFO - 
+Iniciando distribuição para zona 15 - 43
+2025-01-15 10:18:40,051 - INFO - Necessidade da zona: 251 regulares + 30 contingência
+2025-01-15 10:18:40,051 - INFO - Alocadas 251 urnas regulares modelo 2020 (restam 2749 no estoque)
+2025-01-15 10:18:40,051 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,051 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,051 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,051 - INFO - Alocadas 26 urnas de contingência modelo 2022 (restam 0 no estoque)
+2025-01-15 10:18:40,051 - INFO - Alocadas 4 urnas de contingência modelo 2020 (restam 2745 no estoque)
+2025-01-15 10:18:40,051 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,052 - INFO - Registro criado: 251 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,052 - INFO - Registro criado: 26 urnas modelo 2022 (contingência)
+2025-01-15 10:18:40,052 - INFO - Registro criado: 4 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,052 - INFO - 
+Iniciando distribuição para zona 18 - 6
+2025-01-15 10:18:40,052 - INFO - Necessidade da zona: 234 regulares + 28 contingência
+2025-01-15 10:18:40,053 - INFO - Alocadas 234 urnas regulares modelo 2020 (restam 2511 no estoque)
+2025-01-15 10:18:40,053 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,053 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,053 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,053 - INFO - Alocadas 28 urnas de contingência modelo 2020 (restam 2483 no estoque)
+2025-01-15 10:18:40,053 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,054 - INFO - Registro criado: 234 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,054 - INFO - Registro criado: 28 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,054 - INFO - 
+Iniciando distribuição para zona 3 - 24
+2025-01-15 10:18:40,054 - INFO - Necessidade da zona: 207 regulares + 24 contingência
+2025-01-15 10:18:40,054 - INFO - Alocadas 207 urnas regulares modelo 2020 (restam 2276 no estoque)
+2025-01-15 10:18:40,054 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,054 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,054 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,055 - INFO - Alocadas 24 urnas de contingência modelo 2020 (restam 2252 no estoque)
+2025-01-15 10:18:40,055 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,055 - INFO - Registro criado: 207 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,055 - INFO - Registro criado: 24 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,055 - INFO - 
+Iniciando distribuição para zona 39 - 21
+2025-01-15 10:18:40,056 - INFO - Necessidade da zona: 195 regulares + 23 contingência
+2025-01-15 10:18:40,056 - INFO - Alocadas 195 urnas regulares modelo 2020 (restam 2057 no estoque)
+2025-01-15 10:18:40,056 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,056 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,056 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,056 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 2034 no estoque)
+2025-01-15 10:18:40,056 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,056 - INFO - Registro criado: 195 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,057 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,057 - INFO - 
+Iniciando distribuição para zona 45 - 33
+2025-01-15 10:18:40,057 - INFO - Necessidade da zona: 193 regulares + 23 contingência
+2025-01-15 10:18:40,057 - INFO - Alocadas 193 urnas regulares modelo 2020 (restam 1841 no estoque)
+2025-01-15 10:18:40,057 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,057 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,057 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,058 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 1818 no estoque)
+2025-01-15 10:18:40,058 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,058 - INFO - Registro criado: 193 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,058 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,058 - INFO - 
+Iniciando distribuição para zona 51 - 25
+2025-01-15 10:18:40,058 - INFO - Necessidade da zona: 192 regulares + 23 contingência
+2025-01-15 10:18:40,058 - INFO - Alocadas 192 urnas regulares modelo 2020 (restam 1626 no estoque)
+2025-01-15 10:18:40,059 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,059 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,059 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,059 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 1603 no estoque)
+2025-01-15 10:18:40,059 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,059 - INFO - Registro criado: 192 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,060 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,060 - INFO - 
+Iniciando distribuição para zona 53 - 40
+2025-01-15 10:18:40,060 - INFO - Necessidade da zona: 163 regulares + 19 contingência
+2025-01-15 10:18:40,060 - INFO - Alocadas 163 urnas regulares modelo 2020 (restam 1440 no estoque)
+2025-01-15 10:18:40,060 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,060 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,060 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,061 - INFO - Alocadas 19 urnas de contingência modelo 2020 (restam 1421 no estoque)
+2025-01-15 10:18:40,061 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,061 - INFO - Registro criado: 163 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,061 - INFO - Registro criado: 19 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,061 - INFO - 
+Iniciando distribuição para zona 28 - 23
+2025-01-15 10:18:40,061 - INFO - Necessidade da zona: 156 regulares + 18 contingência
+2025-01-15 10:18:40,061 - INFO - Alocadas 156 urnas regulares modelo 2020 (restam 1265 no estoque)
+2025-01-15 10:18:40,062 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,062 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,062 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,062 - INFO - Alocadas 18 urnas de contingência modelo 2020 (restam 1247 no estoque)
+2025-01-15 10:18:40,062 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,062 - INFO - Registro criado: 156 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,063 - INFO - Registro criado: 18 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,063 - INFO - 
+Iniciando distribuição para zona 25 - 35
+2025-01-15 10:18:40,063 - INFO - Necessidade da zona: 152 regulares + 18 contingência
+2025-01-15 10:18:40,063 - INFO - Alocadas 152 urnas regulares modelo 2020 (restam 1095 no estoque)
+2025-01-15 10:18:40,063 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,063 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,063 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,064 - INFO - Alocadas 18 urnas de contingência modelo 2020 (restam 1077 no estoque)
+2025-01-15 10:18:40,064 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,064 - INFO - Registro criado: 152 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,064 - INFO - Registro criado: 18 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,064 - INFO - 
+Iniciando distribuição para zona 42 - 3
+2025-01-15 10:18:40,064 - INFO - Necessidade da zona: 149 regulares + 17 contingência
+2025-01-15 10:18:40,064 - INFO - Alocadas 149 urnas regulares modelo 2020 (restam 928 no estoque)
+2025-01-15 10:18:40,064 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,064 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,064 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,065 - INFO - Alocadas 17 urnas de contingência modelo 2020 (restam 911 no estoque)
+2025-01-15 10:18:40,065 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,065 - INFO - Registro criado: 149 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,066 - INFO - Registro criado: 17 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,066 - INFO - 
+Iniciando distribuição para zona 23 - 28
+2025-01-15 10:18:40,066 - INFO - Necessidade da zona: 141 regulares + 16 contingência
+2025-01-15 10:18:40,066 - INFO - Alocadas 141 urnas regulares modelo 2020 (restam 770 no estoque)
+2025-01-15 10:18:40,066 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,066 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,066 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,066 - INFO - Alocadas 16 urnas de contingência modelo 2020 (restam 754 no estoque)
+2025-01-15 10:18:40,066 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,067 - INFO - Registro criado: 141 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,067 - INFO - Registro criado: 16 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,067 - INFO - 
+Iniciando distribuição para zona 43 - 27
+2025-01-15 10:18:40,067 - INFO - Necessidade da zona: 134 regulares + 16 contingência
+2025-01-15 10:18:40,067 - INFO - Alocadas 134 urnas regulares modelo 2020 (restam 620 no estoque)
+2025-01-15 10:18:40,067 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,067 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,067 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,068 - INFO - Alocadas 16 urnas de contingência modelo 2020 (restam 604 no estoque)
+2025-01-15 10:18:40,068 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,068 - INFO - Registro criado: 134 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,068 - INFO - Registro criado: 16 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,068 - INFO - 
+Iniciando distribuição para zona 44 - 52
+2025-01-15 10:18:40,068 - INFO - Necessidade da zona: 129 regulares + 15 contingência
+2025-01-15 10:18:40,069 - INFO - Alocadas 129 urnas regulares modelo 2020 (restam 475 no estoque)
+2025-01-15 10:18:40,069 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,069 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,069 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,069 - INFO - Alocadas 15 urnas de contingência modelo 2020 (restam 460 no estoque)
+2025-01-15 10:18:40,069 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,070 - INFO - Registro criado: 129 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,070 - INFO - Registro criado: 15 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,070 - INFO - 
+Iniciando distribuição para zona 34 - 18
+2025-01-15 10:18:40,070 - INFO - Necessidade da zona: 126 regulares + 15 contingência
+2025-01-15 10:18:40,070 - INFO - Alocadas 126 urnas regulares modelo 2020 (restam 334 no estoque)
+2025-01-15 10:18:40,070 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,070 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,070 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,071 - INFO - Alocadas 15 urnas de contingência modelo 2020 (restam 319 no estoque)
+2025-01-15 10:18:40,071 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,071 - INFO - Registro criado: 126 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,071 - INFO - Registro criado: 15 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,071 - INFO - 
+Iniciando distribuição para zona 10 - 41
+2025-01-15 10:18:40,071 - INFO - Necessidade da zona: 124 regulares + 14 contingência
+2025-01-15 10:18:40,071 - INFO - Alocadas 124 urnas regulares modelo 2020 (restam 195 no estoque)
+2025-01-15 10:18:40,071 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,071 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,072 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,072 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 181 no estoque)
+2025-01-15 10:18:40,072 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,072 - INFO - Registro criado: 124 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,073 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,073 - INFO - 
+Iniciando distribuição para zona 14 - 13
+2025-01-15 10:18:40,073 - INFO - Necessidade da zona: 121 regulares + 14 contingência
+2025-01-15 10:18:40,073 - INFO - Alocadas 121 urnas regulares modelo 2020 (restam 60 no estoque)
+2025-01-15 10:18:40,073 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:18:40,073 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:18:40,073 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,074 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 46 no estoque)
+2025-01-15 10:18:40,074 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,074 - INFO - Registro criado: 121 urnas modelo 2020 (regular)
+2025-01-15 10:18:40,074 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,074 - INFO - 
+Iniciando distribuição para zona 12 - 11
+2025-01-15 10:18:40,074 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-15 10:18:40,074 - INFO - Alocadas 119 urnas regulares modelo 2015 (restam 1291 no estoque)
+2025-01-15 10:18:40,074 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,074 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,075 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,075 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 32 no estoque)
+2025-01-15 10:18:40,075 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,076 - INFO - Registro criado: 119 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,076 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,076 - INFO - 
+Iniciando distribuição para zona 21 - 12
+2025-01-15 10:18:40,076 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-15 10:18:40,076 - INFO - Alocadas 119 urnas regulares modelo 2015 (restam 1172 no estoque)
+2025-01-15 10:18:40,076 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,076 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,076 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,077 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 18 no estoque)
+2025-01-15 10:18:40,077 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,077 - INFO - Registro criado: 119 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,077 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,077 - INFO - 
+Iniciando distribuição para zona 7 - 7
+2025-01-15 10:18:40,077 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-15 10:18:40,077 - INFO - Alocadas 113 urnas regulares modelo 2015 (restam 1059 no estoque)
+2025-01-15 10:18:40,077 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,077 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,078 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,078 - INFO - Alocadas 13 urnas de contingência modelo 2020 (restam 5 no estoque)
+2025-01-15 10:18:40,078 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,079 - INFO - Registro criado: 113 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,079 - INFO - Registro criado: 13 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,079 - INFO - 
+Iniciando distribuição para zona 19 - 26
+2025-01-15 10:18:40,079 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-15 10:18:40,079 - INFO - Alocadas 113 urnas regulares modelo 2015 (restam 946 no estoque)
+2025-01-15 10:18:40,079 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,079 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,079 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,080 - INFO - Alocadas 5 urnas de contingência modelo 2020 (restam 0 no estoque)
+2025-01-15 10:18:40,080 - INFO - Alocadas 8 urnas de contingência modelo 2015 (restam 938 no estoque)
+2025-01-15 10:18:40,080 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,080 - INFO - Registro criado: 113 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,080 - INFO - Registro criado: 5 urnas modelo 2020 (contingência)
+2025-01-15 10:18:40,081 - INFO - Registro criado: 8 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,081 - INFO - 
+Iniciando distribuição para zona 2 - 30
+2025-01-15 10:18:40,081 - INFO - Necessidade da zona: 112 regulares + 13 contingência
+2025-01-15 10:18:40,081 - INFO - Alocadas 112 urnas regulares modelo 2015 (restam 826 no estoque)
+2025-01-15 10:18:40,081 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,081 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,081 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,081 - INFO - Alocadas 13 urnas de contingência modelo 2015 (restam 813 no estoque)
+2025-01-15 10:18:40,081 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,082 - INFO - Registro criado: 112 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,082 - INFO - Registro criado: 13 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,082 - INFO - 
+Iniciando distribuição para zona 48 - 5
+2025-01-15 10:18:40,082 - INFO - Necessidade da zona: 109 regulares + 13 contingência
+2025-01-15 10:18:40,082 - INFO - Alocadas 109 urnas regulares modelo 2015 (restam 704 no estoque)
+2025-01-15 10:18:40,082 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,082 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,082 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,083 - INFO - Alocadas 13 urnas de contingência modelo 2015 (restam 691 no estoque)
+2025-01-15 10:18:40,083 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,083 - INFO - Registro criado: 109 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,083 - INFO - Registro criado: 13 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,084 - INFO - 
+Iniciando distribuição para zona 13 - 38
+2025-01-15 10:18:40,084 - INFO - Necessidade da zona: 108 regulares + 12 contingência
+2025-01-15 10:18:40,084 - INFO - Alocadas 108 urnas regulares modelo 2015 (restam 583 no estoque)
+2025-01-15 10:18:40,084 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,084 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,084 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,084 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 571 no estoque)
+2025-01-15 10:18:40,084 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,085 - INFO - Registro criado: 108 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,085 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,085 - INFO - 
+Iniciando distribuição para zona 41 - 14
+2025-01-15 10:18:40,085 - INFO - Necessidade da zona: 107 regulares + 12 contingência
+2025-01-15 10:18:40,085 - INFO - Alocadas 107 urnas regulares modelo 2015 (restam 464 no estoque)
+2025-01-15 10:18:40,085 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,085 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,085 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,086 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 452 no estoque)
+2025-01-15 10:18:40,086 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,086 - INFO - Registro criado: 107 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,086 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,087 - INFO - 
+Iniciando distribuição para zona 37 - 44
+2025-01-15 10:18:40,087 - INFO - Necessidade da zona: 106 regulares + 12 contingência
+2025-01-15 10:18:40,087 - INFO - Alocadas 106 urnas regulares modelo 2015 (restam 346 no estoque)
+2025-01-15 10:18:40,087 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,087 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,087 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,087 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 334 no estoque)
+2025-01-15 10:18:40,087 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,088 - INFO - Registro criado: 106 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,088 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,088 - INFO - 
+Iniciando distribuição para zona 26 - 34
+2025-01-15 10:18:40,088 - INFO - Necessidade da zona: 102 regulares + 12 contingência
+2025-01-15 10:18:40,088 - INFO - Alocadas 102 urnas regulares modelo 2015 (restam 232 no estoque)
+2025-01-15 10:18:40,088 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,088 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,088 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,089 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 220 no estoque)
+2025-01-15 10:18:40,089 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,089 - INFO - Registro criado: 102 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,089 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,089 - INFO - 
+Iniciando distribuição para zona 50 - 4
+2025-01-15 10:18:40,089 - INFO - Necessidade da zona: 100 regulares + 12 contingência
+2025-01-15 10:18:40,089 - INFO - Alocadas 100 urnas regulares modelo 2015 (restam 120 no estoque)
+2025-01-15 10:18:40,089 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,089 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,090 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,090 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 108 no estoque)
+2025-01-15 10:18:40,090 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,091 - INFO - Registro criado: 100 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,091 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,091 - INFO - 
+Iniciando distribuição para zona 29 - 61
+2025-01-15 10:18:40,091 - INFO - Necessidade da zona: 87 regulares + 10 contingência
+2025-01-15 10:18:40,091 - INFO - Alocadas 87 urnas regulares modelo 2015 (restam 21 no estoque)
+2025-01-15 10:18:40,091 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:18:40,091 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,091 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,092 - INFO - Alocadas 10 urnas de contingência modelo 2015 (restam 11 no estoque)
+2025-01-15 10:18:40,092 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,092 - INFO - Registro criado: 87 urnas modelo 2015 (regular)
+2025-01-15 10:18:40,092 - INFO - Registro criado: 10 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,092 - INFO - 
+Iniciando distribuição para zona 20 - 60
+2025-01-15 10:18:40,092 - INFO - Necessidade da zona: 85 regulares + 10 contingência
+2025-01-15 10:18:40,092 - INFO - Alocadas 85 urnas regulares modelo 2013 (restam 1323 no estoque)
+2025-01-15 10:18:40,093 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,093 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,093 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,093 - INFO - Alocadas 10 urnas de contingência modelo 2015 (restam 1 no estoque)
+2025-01-15 10:18:40,093 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,093 - INFO - Registro criado: 85 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,094 - INFO - Registro criado: 10 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,094 - INFO - 
+Iniciando distribuição para zona 4 - 8
+2025-01-15 10:18:40,094 - INFO - Necessidade da zona: 83 regulares + 9 contingência
+2025-01-15 10:18:40,094 - INFO - Alocadas 83 urnas regulares modelo 2013 (restam 1240 no estoque)
+2025-01-15 10:18:40,094 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,094 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,094 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,095 - INFO - Alocadas 1 urnas de contingência modelo 2015 (restam 0 no estoque)
+2025-01-15 10:18:40,095 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 1232 no estoque)
+2025-01-15 10:18:40,095 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,095 - INFO - Registro criado: 83 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,095 - INFO - Registro criado: 1 urnas modelo 2015 (contingência)
+2025-01-15 10:18:40,096 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,096 - INFO - 
+Iniciando distribuição para zona 55 - 16
+2025-01-15 10:18:40,096 - INFO - Necessidade da zona: 81 regulares + 9 contingência
+2025-01-15 10:18:40,096 - INFO - Alocadas 81 urnas regulares modelo 2013 (restam 1151 no estoque)
+2025-01-15 10:18:40,096 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,096 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,096 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,096 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1142 no estoque)
+2025-01-15 10:18:40,096 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,097 - INFO - Registro criado: 81 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,097 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,097 - INFO - 
+Iniciando distribuição para zona 36 - 57
+2025-01-15 10:18:40,097 - INFO - Necessidade da zona: 79 regulares + 9 contingência
+2025-01-15 10:18:40,097 - INFO - Alocadas 79 urnas regulares modelo 2013 (restam 1063 no estoque)
+2025-01-15 10:18:40,097 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,097 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,097 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,098 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1054 no estoque)
+2025-01-15 10:18:40,098 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,098 - INFO - Registro criado: 79 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,099 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,099 - INFO - 
+Iniciando distribuição para zona 11 - 17
+2025-01-15 10:18:40,099 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-15 10:18:40,099 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 976 no estoque)
+2025-01-15 10:18:40,099 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,099 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,099 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,099 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 967 no estoque)
+2025-01-15 10:18:40,099 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,100 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,100 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,100 - INFO - 
+Iniciando distribuição para zona 24 - 31
+2025-01-15 10:18:40,100 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-15 10:18:40,100 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 889 no estoque)
+2025-01-15 10:18:40,100 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,100 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,100 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,101 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 880 no estoque)
+2025-01-15 10:18:40,101 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,101 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,101 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,102 - INFO - 
+Iniciando distribuição para zona 16 - 53
+2025-01-15 10:18:40,102 - INFO - Necessidade da zona: 77 regulares + 9 contingência
+2025-01-15 10:18:40,102 - INFO - Alocadas 77 urnas regulares modelo 2013 (restam 803 no estoque)
+2025-01-15 10:18:40,102 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,102 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,102 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,102 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 794 no estoque)
+2025-01-15 10:18:40,102 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,103 - INFO - Registro criado: 77 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,103 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,103 - INFO - 
+Iniciando distribuição para zona 27 - 32
+2025-01-15 10:18:40,103 - INFO - Necessidade da zona: 76 regulares + 9 contingência
+2025-01-15 10:18:40,103 - INFO - Alocadas 76 urnas regulares modelo 2013 (restam 718 no estoque)
+2025-01-15 10:18:40,103 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,103 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,103 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,104 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 709 no estoque)
+2025-01-15 10:18:40,104 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,104 - INFO - Registro criado: 76 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,104 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,104 - INFO - 
+Iniciando distribuição para zona 6 - 45
+2025-01-15 10:18:40,104 - INFO - Necessidade da zona: 75 regulares + 9 contingência
+2025-01-15 10:18:40,105 - INFO - Alocadas 75 urnas regulares modelo 2013 (restam 634 no estoque)
+2025-01-15 10:18:40,105 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,105 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,105 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,105 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 625 no estoque)
+2025-01-15 10:18:40,105 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,106 - INFO - Registro criado: 75 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,106 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,106 - INFO - 
+Iniciando distribuição para zona 8 - 50
+2025-01-15 10:18:40,106 - INFO - Necessidade da zona: 73 regulares + 8 contingência
+2025-01-15 10:18:40,106 - INFO - Alocadas 73 urnas regulares modelo 2013 (restam 552 no estoque)
+2025-01-15 10:18:40,106 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,106 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,106 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,107 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 544 no estoque)
+2025-01-15 10:18:40,107 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,107 - INFO - Registro criado: 73 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,107 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,107 - INFO - 
+Iniciando distribuição para zona 5 - 15
+2025-01-15 10:18:40,108 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-15 10:18:40,108 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 473 no estoque)
+2025-01-15 10:18:40,108 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,108 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,108 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,108 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 465 no estoque)
+2025-01-15 10:18:40,108 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,109 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,109 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,109 - INFO - 
+Iniciando distribuição para zona 22 - 42
+2025-01-15 10:18:40,109 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-15 10:18:40,109 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 394 no estoque)
+2025-01-15 10:18:40,109 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,109 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,109 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,110 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 386 no estoque)
+2025-01-15 10:18:40,110 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,110 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,110 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,110 - INFO - 
+Iniciando distribuição para zona 30 - 48
+2025-01-15 10:18:40,110 - INFO - Necessidade da zona: 68 regulares + 8 contingência
+2025-01-15 10:18:40,110 - INFO - Alocadas 68 urnas regulares modelo 2013 (restam 318 no estoque)
+2025-01-15 10:18:40,110 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,110 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,110 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,111 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 310 no estoque)
+2025-01-15 10:18:40,111 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,112 - INFO - Registro criado: 68 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,112 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,112 - INFO - 
+Iniciando distribuição para zona 52 - 47
+2025-01-15 10:18:40,112 - INFO - Necessidade da zona: 65 regulares + 7 contingência
+2025-01-15 10:18:40,112 - INFO - Alocadas 65 urnas regulares modelo 2013 (restam 245 no estoque)
+2025-01-15 10:18:40,112 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,112 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,112 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,113 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 238 no estoque)
+2025-01-15 10:18:40,113 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,113 - INFO - Registro criado: 65 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,113 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,113 - INFO - 
+Iniciando distribuição para zona 38 - 2
+2025-01-15 10:18:40,113 - INFO - Necessidade da zona: 60 regulares + 7 contingência
+2025-01-15 10:18:40,113 - INFO - Alocadas 60 urnas regulares modelo 2013 (restam 178 no estoque)
+2025-01-15 10:18:40,113 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,114 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,114 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,114 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 171 no estoque)
+2025-01-15 10:18:40,114 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,114 - INFO - Registro criado: 60 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,115 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,115 - INFO - 
+Iniciando distribuição para zona 35 - 36
+2025-01-15 10:18:40,115 - INFO - Necessidade da zona: 57 regulares + 6 contingência
+2025-01-15 10:18:40,115 - INFO - Alocadas 57 urnas regulares modelo 2013 (restam 114 no estoque)
+2025-01-15 10:18:40,115 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,115 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,115 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,116 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 108 no estoque)
+2025-01-15 10:18:40,116 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,116 - INFO - Registro criado: 57 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,116 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,116 - INFO - 
+Iniciando distribuição para zona 47 - 29
+2025-01-15 10:18:40,116 - INFO - Necessidade da zona: 54 regulares + 6 contingência
+2025-01-15 10:18:40,116 - INFO - Alocadas 54 urnas regulares modelo 2013 (restam 54 no estoque)
+2025-01-15 10:18:40,116 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,116 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,116 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,117 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 48 no estoque)
+2025-01-15 10:18:40,117 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,117 - INFO - Registro criado: 54 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,117 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,117 - INFO - 
+Iniciando distribuição para zona 17 - 56
+2025-01-15 10:18:40,117 - INFO - Necessidade da zona: 43 regulares + 5 contingência
+2025-01-15 10:18:40,118 - INFO - Alocadas 43 urnas regulares modelo 2013 (restam 5 no estoque)
+2025-01-15 10:18:40,118 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:18:40,118 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:18:40,118 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:18:40,118 - INFO - Alocadas 5 urnas de contingência modelo 2013 (restam 0 no estoque)
+2025-01-15 10:18:40,118 - INFO - Criando registros no banco de dados
+2025-01-15 10:18:40,118 - INFO - Registro criado: 43 urnas modelo 2013 (regular)
+2025-01-15 10:18:40,119 - INFO - Registro criado: 5 urnas modelo 2013 (contingência)
+2025-01-15 10:18:40,119 - INFO - 
+Atualizando estoque final
+2025-01-15 10:18:40,119 - INFO - Estoque final modelo 2022: 0 unidades
+2025-01-15 10:18:40,119 - INFO - Estoque final modelo 2020: 0 unidades
+2025-01-15 10:18:40,120 - INFO - Estoque final modelo 2015: 0 unidades
+2025-01-15 10:18:40,120 - INFO - Estoque final modelo 2013: 0 unidades
+2025-01-15 10:18:40,120 - INFO - Resumo da distribuição por zona:
+2025-01-15 10:18:40,120 - INFO - Zona 31 - 39:
+2025-01-15 10:18:40,120 - INFO -  - 364 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,120 - INFO -  - 43 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,120 - INFO - Zona 1 - 1:
+2025-01-15 10:18:40,120 - INFO -  - 357 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,120 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,120 - INFO - Zona 46 - 20:
+2025-01-15 10:18:40,121 - INFO -  - 355 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 33 - 51:
+2025-01-15 10:18:40,121 - INFO -  - 337 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 32 - 55:
+2025-01-15 10:18:40,121 - INFO -  - 334 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 56 - 22:
+2025-01-15 10:18:40,121 - INFO -  - 324 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 57 - 49:
+2025-01-15 10:18:40,121 - INFO -  - 319 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 9 - 9:
+2025-01-15 10:18:40,121 - INFO -  - 318 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 54 - 46:
+2025-01-15 10:18:40,121 - INFO -  - 292 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 35 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 40 - 10:
+2025-01-15 10:18:40,121 - INFO -  - 283 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,121 - INFO -  - 33 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,121 - INFO - Zona 49 - 19:
+2025-01-15 10:18:40,121 - INFO -  - 270 urnas modelo 2022 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 32 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 15 - 43:
+2025-01-15 10:18:40,122 - INFO -  - 251 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 26 urnas modelo 2022 (Contingência)
+2025-01-15 10:18:40,122 - INFO -  - 4 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 18 - 6:
+2025-01-15 10:18:40,122 - INFO -  - 234 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 28 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 3 - 24:
+2025-01-15 10:18:40,122 - INFO -  - 207 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 24 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 39 - 21:
+2025-01-15 10:18:40,122 - INFO -  - 195 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 45 - 33:
+2025-01-15 10:18:40,122 - INFO -  - 193 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 51 - 25:
+2025-01-15 10:18:40,122 - INFO -  - 192 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 53 - 40:
+2025-01-15 10:18:40,122 - INFO -  - 163 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 19 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 28 - 23:
+2025-01-15 10:18:40,122 - INFO -  - 156 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 18 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 25 - 35:
+2025-01-15 10:18:40,122 - INFO -  - 152 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 18 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 42 - 3:
+2025-01-15 10:18:40,122 - INFO -  - 149 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 17 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 23 - 28:
+2025-01-15 10:18:40,122 - INFO -  - 141 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 16 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,122 - INFO - Zona 43 - 27:
+2025-01-15 10:18:40,122 - INFO -  - 134 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,122 - INFO -  - 16 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 44 - 52:
+2025-01-15 10:18:40,123 - INFO -  - 129 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 15 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 34 - 18:
+2025-01-15 10:18:40,123 - INFO -  - 126 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 15 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 10 - 41:
+2025-01-15 10:18:40,123 - INFO -  - 124 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 14 - 13:
+2025-01-15 10:18:40,123 - INFO -  - 121 urnas modelo 2020 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 12 - 11:
+2025-01-15 10:18:40,123 - INFO -  - 119 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 21 - 12:
+2025-01-15 10:18:40,123 - INFO -  - 119 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 7 - 7:
+2025-01-15 10:18:40,123 - INFO -  - 113 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 13 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,123 - INFO - Zona 19 - 26:
+2025-01-15 10:18:40,123 - INFO -  - 113 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,123 - INFO -  - 5 urnas modelo 2020 (Contingência)
+2025-01-15 10:18:40,124 - INFO -  - 8 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,124 - INFO - Zona 2 - 30:
+2025-01-15 10:18:40,124 - INFO -  - 112 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,124 - INFO -  - 13 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,124 - INFO - Zona 48 - 5:
+2025-01-15 10:18:40,124 - INFO -  - 109 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,124 - INFO -  - 13 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,124 - INFO - Zona 13 - 38:
+2025-01-15 10:18:40,124 - INFO -  - 108 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,124 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,124 - INFO - Zona 41 - 14:
+2025-01-15 10:18:40,124 - INFO -  - 107 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,124 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 37 - 44:
+2025-01-15 10:18:40,125 - INFO -  - 106 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 26 - 34:
+2025-01-15 10:18:40,125 - INFO -  - 102 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 50 - 4:
+2025-01-15 10:18:40,125 - INFO -  - 100 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 29 - 61:
+2025-01-15 10:18:40,125 - INFO -  - 87 urnas modelo 2015 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 10 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 20 - 60:
+2025-01-15 10:18:40,125 - INFO -  - 85 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 10 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 4 - 8:
+2025-01-15 10:18:40,125 - INFO -  - 83 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 1 urnas modelo 2015 (Contingência)
+2025-01-15 10:18:40,125 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 55 - 16:
+2025-01-15 10:18:40,125 - INFO -  - 81 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 36 - 57:
+2025-01-15 10:18:40,125 - INFO -  - 79 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,125 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,125 - INFO - Zona 11 - 17:
+2025-01-15 10:18:40,126 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 24 - 31:
+2025-01-15 10:18:40,126 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 16 - 53:
+2025-01-15 10:18:40,126 - INFO -  - 77 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 27 - 32:
+2025-01-15 10:18:40,126 - INFO -  - 76 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 6 - 45:
+2025-01-15 10:18:40,126 - INFO -  - 75 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 8 - 50:
+2025-01-15 10:18:40,126 - INFO -  - 73 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 5 - 15:
+2025-01-15 10:18:40,126 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 22 - 42:
+2025-01-15 10:18:40,126 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,126 - INFO - Zona 30 - 48:
+2025-01-15 10:18:40,126 - INFO -  - 68 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,126 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,127 - INFO - Zona 52 - 47:
+2025-01-15 10:18:40,127 - INFO -  - 65 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,127 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,127 - INFO - Zona 38 - 2:
+2025-01-15 10:18:40,127 - INFO -  - 60 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,127 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,127 - INFO - Zona 35 - 36:
+2025-01-15 10:18:40,127 - INFO -  - 57 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,127 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,127 - INFO - Zona 47 - 29:
+2025-01-15 10:18:40,127 - INFO -  - 54 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,127 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,127 - INFO - Zona 17 - 56:
+2025-01-15 10:18:40,127 - INFO -  - 43 urnas modelo 2013 (Regular)
+2025-01-15 10:18:40,127 - INFO -  - 5 urnas modelo 2013 (Contingência)
+2025-01-15 10:18:40,129 - INFO - Distribuição concluída com sucesso.
+2025-01-15 10:19:41,548 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-15 10:19:41,549 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-15 10:19:41,549 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-15 10:19:41,549 - INFO - Total de zonas a receber urnas: 57
+2025-01-15 10:19:41,550 - INFO - Estoque disponível por modelo:
+2025-01-15 10:19:41,550 - INFO - Modelo 2022: 2000 unidades (Bio: True)
+2025-01-15 10:19:41,550 - INFO - Modelo 2020: 1500 unidades (Bio: True)
+2025-01-15 10:19:41,550 - INFO - Modelo 2015: 1110 unidades (Bio: True)
+2025-01-15 10:19:41,550 - INFO - Modelo 2013: 1900 unidades (Bio: True)
+2025-01-15 10:19:41,550 - ERROR - Estoque insuficiente. Necessário: 9818, Disponível: 6510
+2025-01-15 10:19:41,550 - WARNING - Bad Request: /distribuir/
+2025-01-15 10:21:44,691 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-15 10:21:44,691 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-15 10:21:44,692 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-15 10:21:44,692 - INFO - Total de zonas a receber urnas: 57
+2025-01-15 10:21:44,692 - INFO - Estoque disponível por modelo:
+2025-01-15 10:21:44,692 - INFO - Modelo 2022: 1500 unidades (Bio: True)
+2025-01-15 10:21:44,692 - INFO - Modelo 2020: 2500 unidades (Bio: True)
+2025-01-15 10:21:44,692 - INFO - Modelo 2015: 3000 unidades (Bio: True)
+2025-01-15 10:21:44,692 - INFO - Modelo 2013: 2818 unidades (Bio: True)
+2025-01-15 10:21:44,693 - INFO - Inventário inicial: {'2022': 1500, '2020': 2500, '2015': 3000, '2013': 2818}
+2025-01-15 10:21:44,698 - INFO - Removidas 117 urnas de distribuições anteriores
+2025-01-15 10:21:44,698 - INFO - 
+Iniciando distribuição para zona 31 - 39
+2025-01-15 10:21:44,698 - INFO - Necessidade da zona: 364 regulares + 43 contingência
+2025-01-15 10:21:44,698 - INFO - Alocadas 364 urnas regulares modelo 2022 (restam 1136 no estoque)
+2025-01-15 10:21:44,698 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:21:44,698 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,698 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,699 - INFO - Alocadas 43 urnas de contingência modelo 2022 (restam 1093 no estoque)
+2025-01-15 10:21:44,699 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,699 - INFO - Registro criado: 364 urnas modelo 2022 (regular)
+2025-01-15 10:21:44,700 - INFO - Registro criado: 43 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,700 - INFO - 
+Iniciando distribuição para zona 1 - 1
+2025-01-15 10:21:44,700 - INFO - Necessidade da zona: 357 regulares + 42 contingência
+2025-01-15 10:21:44,700 - INFO - Alocadas 357 urnas regulares modelo 2022 (restam 736 no estoque)
+2025-01-15 10:21:44,700 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:21:44,700 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,700 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,701 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 694 no estoque)
+2025-01-15 10:21:44,701 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,701 - INFO - Registro criado: 357 urnas modelo 2022 (regular)
+2025-01-15 10:21:44,701 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,701 - INFO - 
+Iniciando distribuição para zona 46 - 20
+2025-01-15 10:21:44,701 - INFO - Necessidade da zona: 355 regulares + 42 contingência
+2025-01-15 10:21:44,701 - INFO - Alocadas 355 urnas regulares modelo 2022 (restam 339 no estoque)
+2025-01-15 10:21:44,701 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-15 10:21:44,701 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,701 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,702 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 297 no estoque)
+2025-01-15 10:21:44,702 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,702 - INFO - Registro criado: 355 urnas modelo 2022 (regular)
+2025-01-15 10:21:44,703 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,703 - INFO - 
+Iniciando distribuição para zona 33 - 51
+2025-01-15 10:21:44,703 - INFO - Necessidade da zona: 337 regulares + 40 contingência
+2025-01-15 10:21:44,703 - INFO - Alocadas 337 urnas regulares modelo 2020 (restam 2163 no estoque)
+2025-01-15 10:21:44,703 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,703 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,703 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,703 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 257 no estoque)
+2025-01-15 10:21:44,703 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,704 - INFO - Registro criado: 337 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,704 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,704 - INFO - 
+Iniciando distribuição para zona 32 - 55
+2025-01-15 10:21:44,704 - INFO - Necessidade da zona: 334 regulares + 40 contingência
+2025-01-15 10:21:44,704 - INFO - Alocadas 334 urnas regulares modelo 2020 (restam 1829 no estoque)
+2025-01-15 10:21:44,704 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,704 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,704 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,705 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 217 no estoque)
+2025-01-15 10:21:44,705 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,705 - INFO - Registro criado: 334 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,705 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,705 - INFO - 
+Iniciando distribuição para zona 56 - 22
+2025-01-15 10:21:44,705 - INFO - Necessidade da zona: 324 regulares + 38 contingência
+2025-01-15 10:21:44,705 - INFO - Alocadas 324 urnas regulares modelo 2020 (restam 1505 no estoque)
+2025-01-15 10:21:44,705 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,705 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,706 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,706 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 179 no estoque)
+2025-01-15 10:21:44,706 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,706 - INFO - Registro criado: 324 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,707 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,707 - INFO - 
+Iniciando distribuição para zona 57 - 49
+2025-01-15 10:21:44,707 - INFO - Necessidade da zona: 319 regulares + 38 contingência
+2025-01-15 10:21:44,707 - INFO - Alocadas 319 urnas regulares modelo 2020 (restam 1186 no estoque)
+2025-01-15 10:21:44,707 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,707 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,707 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,707 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 141 no estoque)
+2025-01-15 10:21:44,707 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,708 - INFO - Registro criado: 319 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,708 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,708 - INFO - 
+Iniciando distribuição para zona 9 - 9
+2025-01-15 10:21:44,708 - INFO - Necessidade da zona: 318 regulares + 38 contingência
+2025-01-15 10:21:44,708 - INFO - Alocadas 318 urnas regulares modelo 2020 (restam 868 no estoque)
+2025-01-15 10:21:44,708 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,708 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,708 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,709 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 103 no estoque)
+2025-01-15 10:21:44,709 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,709 - INFO - Registro criado: 318 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,709 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,709 - INFO - 
+Iniciando distribuição para zona 54 - 46
+2025-01-15 10:21:44,709 - INFO - Necessidade da zona: 292 regulares + 35 contingência
+2025-01-15 10:21:44,709 - INFO - Alocadas 292 urnas regulares modelo 2020 (restam 576 no estoque)
+2025-01-15 10:21:44,710 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,710 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,710 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,710 - INFO - Alocadas 35 urnas de contingência modelo 2022 (restam 68 no estoque)
+2025-01-15 10:21:44,710 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,710 - INFO - Registro criado: 292 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,711 - INFO - Registro criado: 35 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,711 - INFO - 
+Iniciando distribuição para zona 40 - 10
+2025-01-15 10:21:44,711 - INFO - Necessidade da zona: 283 regulares + 33 contingência
+2025-01-15 10:21:44,711 - INFO - Alocadas 283 urnas regulares modelo 2020 (restam 293 no estoque)
+2025-01-15 10:21:44,711 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,711 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,711 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,711 - INFO - Alocadas 33 urnas de contingência modelo 2022 (restam 35 no estoque)
+2025-01-15 10:21:44,712 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,712 - INFO - Registro criado: 283 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,712 - INFO - Registro criado: 33 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,712 - INFO - 
+Iniciando distribuição para zona 49 - 19
+2025-01-15 10:21:44,712 - INFO - Necessidade da zona: 270 regulares + 32 contingência
+2025-01-15 10:21:44,712 - INFO - Alocadas 270 urnas regulares modelo 2020 (restam 23 no estoque)
+2025-01-15 10:21:44,712 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-15 10:21:44,712 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-15 10:21:44,712 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,713 - INFO - Alocadas 32 urnas de contingência modelo 2022 (restam 3 no estoque)
+2025-01-15 10:21:44,713 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,713 - INFO - Registro criado: 270 urnas modelo 2020 (regular)
+2025-01-15 10:21:44,713 - INFO - Registro criado: 32 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,713 - INFO - 
+Iniciando distribuição para zona 15 - 43
+2025-01-15 10:21:44,713 - INFO - Necessidade da zona: 251 regulares + 30 contingência
+2025-01-15 10:21:44,713 - INFO - Alocadas 251 urnas regulares modelo 2015 (restam 2749 no estoque)
+2025-01-15 10:21:44,714 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,714 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,714 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,714 - INFO - Alocadas 3 urnas de contingência modelo 2022 (restam 0 no estoque)
+2025-01-15 10:21:44,714 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 0 no estoque)
+2025-01-15 10:21:44,714 - INFO - Alocadas 4 urnas de contingência modelo 2015 (restam 2745 no estoque)
+2025-01-15 10:21:44,714 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,715 - INFO - Registro criado: 251 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,715 - INFO - Registro criado: 3 urnas modelo 2022 (contingência)
+2025-01-15 10:21:44,715 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-15 10:21:44,715 - INFO - Registro criado: 4 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,716 - INFO - 
+Iniciando distribuição para zona 18 - 6
+2025-01-15 10:21:44,716 - INFO - Necessidade da zona: 234 regulares + 28 contingência
+2025-01-15 10:21:44,716 - INFO - Alocadas 234 urnas regulares modelo 2015 (restam 2511 no estoque)
+2025-01-15 10:21:44,716 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,716 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,716 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,716 - INFO - Alocadas 28 urnas de contingência modelo 2015 (restam 2483 no estoque)
+2025-01-15 10:21:44,716 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,717 - INFO - Registro criado: 234 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,717 - INFO - Registro criado: 28 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,717 - INFO - 
+Iniciando distribuição para zona 3 - 24
+2025-01-15 10:21:44,717 - INFO - Necessidade da zona: 207 regulares + 24 contingência
+2025-01-15 10:21:44,717 - INFO - Alocadas 207 urnas regulares modelo 2015 (restam 2276 no estoque)
+2025-01-15 10:21:44,717 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,717 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,717 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,718 - INFO - Alocadas 24 urnas de contingência modelo 2015 (restam 2252 no estoque)
+2025-01-15 10:21:44,718 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,718 - INFO - Registro criado: 207 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,718 - INFO - Registro criado: 24 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,718 - INFO - 
+Iniciando distribuição para zona 39 - 21
+2025-01-15 10:21:44,718 - INFO - Necessidade da zona: 195 regulares + 23 contingência
+2025-01-15 10:21:44,718 - INFO - Alocadas 195 urnas regulares modelo 2015 (restam 2057 no estoque)
+2025-01-15 10:21:44,718 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,718 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,718 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,719 - INFO - Alocadas 23 urnas de contingência modelo 2015 (restam 2034 no estoque)
+2025-01-15 10:21:44,719 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,719 - INFO - Registro criado: 195 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,720 - INFO - Registro criado: 23 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,720 - INFO - 
+Iniciando distribuição para zona 45 - 33
+2025-01-15 10:21:44,720 - INFO - Necessidade da zona: 193 regulares + 23 contingência
+2025-01-15 10:21:44,720 - INFO - Alocadas 193 urnas regulares modelo 2015 (restam 1841 no estoque)
+2025-01-15 10:21:44,720 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,720 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,720 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,720 - INFO - Alocadas 23 urnas de contingência modelo 2015 (restam 1818 no estoque)
+2025-01-15 10:21:44,720 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,721 - INFO - Registro criado: 193 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,721 - INFO - Registro criado: 23 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,721 - INFO - 
+Iniciando distribuição para zona 51 - 25
+2025-01-15 10:21:44,721 - INFO - Necessidade da zona: 192 regulares + 23 contingência
+2025-01-15 10:21:44,721 - INFO - Alocadas 192 urnas regulares modelo 2015 (restam 1626 no estoque)
+2025-01-15 10:21:44,721 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,721 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,721 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,722 - INFO - Alocadas 23 urnas de contingência modelo 2015 (restam 1603 no estoque)
+2025-01-15 10:21:44,722 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,722 - INFO - Registro criado: 192 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,722 - INFO - Registro criado: 23 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,722 - INFO - 
+Iniciando distribuição para zona 53 - 40
+2025-01-15 10:21:44,722 - INFO - Necessidade da zona: 163 regulares + 19 contingência
+2025-01-15 10:21:44,722 - INFO - Alocadas 163 urnas regulares modelo 2015 (restam 1440 no estoque)
+2025-01-15 10:21:44,723 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,723 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,723 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,723 - INFO - Alocadas 19 urnas de contingência modelo 2015 (restam 1421 no estoque)
+2025-01-15 10:21:44,723 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,724 - INFO - Registro criado: 163 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,724 - INFO - Registro criado: 19 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,724 - INFO - 
+Iniciando distribuição para zona 28 - 23
+2025-01-15 10:21:44,724 - INFO - Necessidade da zona: 156 regulares + 18 contingência
+2025-01-15 10:21:44,724 - INFO - Alocadas 156 urnas regulares modelo 2015 (restam 1265 no estoque)
+2025-01-15 10:21:44,724 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,724 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,724 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,725 - INFO - Alocadas 18 urnas de contingência modelo 2015 (restam 1247 no estoque)
+2025-01-15 10:21:44,725 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,725 - INFO - Registro criado: 156 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,725 - INFO - Registro criado: 18 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,725 - INFO - 
+Iniciando distribuição para zona 25 - 35
+2025-01-15 10:21:44,725 - INFO - Necessidade da zona: 152 regulares + 18 contingência
+2025-01-15 10:21:44,725 - INFO - Alocadas 152 urnas regulares modelo 2015 (restam 1095 no estoque)
+2025-01-15 10:21:44,725 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,725 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,725 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,726 - INFO - Alocadas 18 urnas de contingência modelo 2015 (restam 1077 no estoque)
+2025-01-15 10:21:44,726 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,726 - INFO - Registro criado: 152 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,726 - INFO - Registro criado: 18 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,727 - INFO - 
+Iniciando distribuição para zona 42 - 3
+2025-01-15 10:21:44,727 - INFO - Necessidade da zona: 149 regulares + 17 contingência
+2025-01-15 10:21:44,727 - INFO - Alocadas 149 urnas regulares modelo 2015 (restam 928 no estoque)
+2025-01-15 10:21:44,727 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,727 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,727 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,727 - INFO - Alocadas 17 urnas de contingência modelo 2015 (restam 911 no estoque)
+2025-01-15 10:21:44,727 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,728 - INFO - Registro criado: 149 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,728 - INFO - Registro criado: 17 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,728 - INFO - 
+Iniciando distribuição para zona 23 - 28
+2025-01-15 10:21:44,728 - INFO - Necessidade da zona: 141 regulares + 16 contingência
+2025-01-15 10:21:44,728 - INFO - Alocadas 141 urnas regulares modelo 2015 (restam 770 no estoque)
+2025-01-15 10:21:44,728 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,728 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,728 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,729 - INFO - Alocadas 16 urnas de contingência modelo 2015 (restam 754 no estoque)
+2025-01-15 10:21:44,729 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,729 - INFO - Registro criado: 141 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,729 - INFO - Registro criado: 16 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,729 - INFO - 
+Iniciando distribuição para zona 43 - 27
+2025-01-15 10:21:44,729 - INFO - Necessidade da zona: 134 regulares + 16 contingência
+2025-01-15 10:21:44,730 - INFO - Alocadas 134 urnas regulares modelo 2015 (restam 620 no estoque)
+2025-01-15 10:21:44,730 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,730 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,730 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,730 - INFO - Alocadas 16 urnas de contingência modelo 2015 (restam 604 no estoque)
+2025-01-15 10:21:44,730 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,730 - INFO - Registro criado: 134 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,731 - INFO - Registro criado: 16 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,731 - INFO - 
+Iniciando distribuição para zona 44 - 52
+2025-01-15 10:21:44,731 - INFO - Necessidade da zona: 129 regulares + 15 contingência
+2025-01-15 10:21:44,731 - INFO - Alocadas 129 urnas regulares modelo 2015 (restam 475 no estoque)
+2025-01-15 10:21:44,731 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,731 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,731 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,732 - INFO - Alocadas 15 urnas de contingência modelo 2015 (restam 460 no estoque)
+2025-01-15 10:21:44,732 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,732 - INFO - Registro criado: 129 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,732 - INFO - Registro criado: 15 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,732 - INFO - 
+Iniciando distribuição para zona 34 - 18
+2025-01-15 10:21:44,732 - INFO - Necessidade da zona: 126 regulares + 15 contingência
+2025-01-15 10:21:44,732 - INFO - Alocadas 126 urnas regulares modelo 2015 (restam 334 no estoque)
+2025-01-15 10:21:44,732 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,732 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,732 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,733 - INFO - Alocadas 15 urnas de contingência modelo 2015 (restam 319 no estoque)
+2025-01-15 10:21:44,733 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,733 - INFO - Registro criado: 126 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,733 - INFO - Registro criado: 15 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,734 - INFO - 
+Iniciando distribuição para zona 10 - 41
+2025-01-15 10:21:44,734 - INFO - Necessidade da zona: 124 regulares + 14 contingência
+2025-01-15 10:21:44,734 - INFO - Alocadas 124 urnas regulares modelo 2015 (restam 195 no estoque)
+2025-01-15 10:21:44,734 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,734 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,734 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,734 - INFO - Alocadas 14 urnas de contingência modelo 2015 (restam 181 no estoque)
+2025-01-15 10:21:44,734 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,735 - INFO - Registro criado: 124 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,735 - INFO - Registro criado: 14 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,735 - INFO - 
+Iniciando distribuição para zona 14 - 13
+2025-01-15 10:21:44,735 - INFO - Necessidade da zona: 121 regulares + 14 contingência
+2025-01-15 10:21:44,735 - INFO - Alocadas 121 urnas regulares modelo 2015 (restam 60 no estoque)
+2025-01-15 10:21:44,735 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-15 10:21:44,735 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,735 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,736 - INFO - Alocadas 14 urnas de contingência modelo 2015 (restam 46 no estoque)
+2025-01-15 10:21:44,736 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,736 - INFO - Registro criado: 121 urnas modelo 2015 (regular)
+2025-01-15 10:21:44,736 - INFO - Registro criado: 14 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,736 - INFO - 
+Iniciando distribuição para zona 12 - 11
+2025-01-15 10:21:44,736 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-15 10:21:44,736 - INFO - Alocadas 119 urnas regulares modelo 2013 (restam 2699 no estoque)
+2025-01-15 10:21:44,736 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,737 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,737 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,737 - INFO - Alocadas 14 urnas de contingência modelo 2015 (restam 32 no estoque)
+2025-01-15 10:21:44,737 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,737 - INFO - Registro criado: 119 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,738 - INFO - Registro criado: 14 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,738 - INFO - 
+Iniciando distribuição para zona 21 - 12
+2025-01-15 10:21:44,738 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-15 10:21:44,738 - INFO - Alocadas 119 urnas regulares modelo 2013 (restam 2580 no estoque)
+2025-01-15 10:21:44,738 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,738 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,738 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,738 - INFO - Alocadas 14 urnas de contingência modelo 2015 (restam 18 no estoque)
+2025-01-15 10:21:44,738 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,739 - INFO - Registro criado: 119 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,739 - INFO - Registro criado: 14 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,739 - INFO - 
+Iniciando distribuição para zona 7 - 7
+2025-01-15 10:21:44,739 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-15 10:21:44,739 - INFO - Alocadas 113 urnas regulares modelo 2013 (restam 2467 no estoque)
+2025-01-15 10:21:44,739 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,739 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,739 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,740 - INFO - Alocadas 13 urnas de contingência modelo 2015 (restam 5 no estoque)
+2025-01-15 10:21:44,740 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,740 - INFO - Registro criado: 113 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,740 - INFO - Registro criado: 13 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,740 - INFO - 
+Iniciando distribuição para zona 19 - 26
+2025-01-15 10:21:44,741 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-15 10:21:44,741 - INFO - Alocadas 113 urnas regulares modelo 2013 (restam 2354 no estoque)
+2025-01-15 10:21:44,741 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,741 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,741 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,741 - INFO - Alocadas 5 urnas de contingência modelo 2015 (restam 0 no estoque)
+2025-01-15 10:21:44,741 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 2346 no estoque)
+2025-01-15 10:21:44,741 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,742 - INFO - Registro criado: 113 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,742 - INFO - Registro criado: 5 urnas modelo 2015 (contingência)
+2025-01-15 10:21:44,742 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,742 - INFO - 
+Iniciando distribuição para zona 2 - 30
+2025-01-15 10:21:44,742 - INFO - Necessidade da zona: 112 regulares + 13 contingência
+2025-01-15 10:21:44,742 - INFO - Alocadas 112 urnas regulares modelo 2013 (restam 2234 no estoque)
+2025-01-15 10:21:44,742 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,742 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,742 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,743 - INFO - Alocadas 13 urnas de contingência modelo 2013 (restam 2221 no estoque)
+2025-01-15 10:21:44,743 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,743 - INFO - Registro criado: 112 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,743 - INFO - Registro criado: 13 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,744 - INFO - 
+Iniciando distribuição para zona 48 - 5
+2025-01-15 10:21:44,744 - INFO - Necessidade da zona: 109 regulares + 13 contingência
+2025-01-15 10:21:44,744 - INFO - Alocadas 109 urnas regulares modelo 2013 (restam 2112 no estoque)
+2025-01-15 10:21:44,744 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,744 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,744 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,744 - INFO - Alocadas 13 urnas de contingência modelo 2013 (restam 2099 no estoque)
+2025-01-15 10:21:44,744 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,745 - INFO - Registro criado: 109 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,745 - INFO - Registro criado: 13 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,745 - INFO - 
+Iniciando distribuição para zona 13 - 38
+2025-01-15 10:21:44,745 - INFO - Necessidade da zona: 108 regulares + 12 contingência
+2025-01-15 10:21:44,745 - INFO - Alocadas 108 urnas regulares modelo 2013 (restam 1991 no estoque)
+2025-01-15 10:21:44,745 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,745 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,745 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,746 - INFO - Alocadas 12 urnas de contingência modelo 2013 (restam 1979 no estoque)
+2025-01-15 10:21:44,746 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,746 - INFO - Registro criado: 108 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,746 - INFO - Registro criado: 12 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,746 - INFO - 
+Iniciando distribuição para zona 41 - 14
+2025-01-15 10:21:44,746 - INFO - Necessidade da zona: 107 regulares + 12 contingência
+2025-01-15 10:21:44,746 - INFO - Alocadas 107 urnas regulares modelo 2013 (restam 1872 no estoque)
+2025-01-15 10:21:44,746 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,746 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,747 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,747 - INFO - Alocadas 12 urnas de contingência modelo 2013 (restam 1860 no estoque)
+2025-01-15 10:21:44,747 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,747 - INFO - Registro criado: 107 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,748 - INFO - Registro criado: 12 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,748 - INFO - 
+Iniciando distribuição para zona 37 - 44
+2025-01-15 10:21:44,748 - INFO - Necessidade da zona: 106 regulares + 12 contingência
+2025-01-15 10:21:44,748 - INFO - Alocadas 106 urnas regulares modelo 2013 (restam 1754 no estoque)
+2025-01-15 10:21:44,748 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,748 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,748 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,748 - INFO - Alocadas 12 urnas de contingência modelo 2013 (restam 1742 no estoque)
+2025-01-15 10:21:44,749 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,749 - INFO - Registro criado: 106 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,749 - INFO - Registro criado: 12 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,749 - INFO - 
+Iniciando distribuição para zona 26 - 34
+2025-01-15 10:21:44,749 - INFO - Necessidade da zona: 102 regulares + 12 contingência
+2025-01-15 10:21:44,749 - INFO - Alocadas 102 urnas regulares modelo 2013 (restam 1640 no estoque)
+2025-01-15 10:21:44,749 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,749 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,749 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,750 - INFO - Alocadas 12 urnas de contingência modelo 2013 (restam 1628 no estoque)
+2025-01-15 10:21:44,750 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,750 - INFO - Registro criado: 102 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,750 - INFO - Registro criado: 12 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,750 - INFO - 
+Iniciando distribuição para zona 50 - 4
+2025-01-15 10:21:44,750 - INFO - Necessidade da zona: 100 regulares + 12 contingência
+2025-01-15 10:21:44,751 - INFO - Alocadas 100 urnas regulares modelo 2013 (restam 1528 no estoque)
+2025-01-15 10:21:44,751 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,751 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,751 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,751 - INFO - Alocadas 12 urnas de contingência modelo 2013 (restam 1516 no estoque)
+2025-01-15 10:21:44,751 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,751 - INFO - Registro criado: 100 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,752 - INFO - Registro criado: 12 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,752 - INFO - 
+Iniciando distribuição para zona 29 - 61
+2025-01-15 10:21:44,752 - INFO - Necessidade da zona: 87 regulares + 10 contingência
+2025-01-15 10:21:44,752 - INFO - Alocadas 87 urnas regulares modelo 2013 (restam 1429 no estoque)
+2025-01-15 10:21:44,752 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,752 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,752 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,753 - INFO - Alocadas 10 urnas de contingência modelo 2013 (restam 1419 no estoque)
+2025-01-15 10:21:44,753 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,753 - INFO - Registro criado: 87 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,753 - INFO - Registro criado: 10 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,753 - INFO - 
+Iniciando distribuição para zona 20 - 60
+2025-01-15 10:21:44,753 - INFO - Necessidade da zona: 85 regulares + 10 contingência
+2025-01-15 10:21:44,753 - INFO - Alocadas 85 urnas regulares modelo 2013 (restam 1334 no estoque)
+2025-01-15 10:21:44,753 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,753 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,753 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,755 - INFO - Alocadas 10 urnas de contingência modelo 2013 (restam 1324 no estoque)
+2025-01-15 10:21:44,755 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,755 - INFO - Registro criado: 85 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,755 - INFO - Registro criado: 10 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,755 - INFO - 
+Iniciando distribuição para zona 4 - 8
+2025-01-15 10:21:44,755 - INFO - Necessidade da zona: 83 regulares + 9 contingência
+2025-01-15 10:21:44,755 - INFO - Alocadas 83 urnas regulares modelo 2013 (restam 1241 no estoque)
+2025-01-15 10:21:44,755 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,755 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,755 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,756 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1232 no estoque)
+2025-01-15 10:21:44,756 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,756 - INFO - Registro criado: 83 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,757 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,757 - INFO - 
+Iniciando distribuição para zona 55 - 16
+2025-01-15 10:21:44,757 - INFO - Necessidade da zona: 81 regulares + 9 contingência
+2025-01-15 10:21:44,757 - INFO - Alocadas 81 urnas regulares modelo 2013 (restam 1151 no estoque)
+2025-01-15 10:21:44,757 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,757 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,757 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,757 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1142 no estoque)
+2025-01-15 10:21:44,757 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,758 - INFO - Registro criado: 81 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,758 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,758 - INFO - 
+Iniciando distribuição para zona 36 - 57
+2025-01-15 10:21:44,758 - INFO - Necessidade da zona: 79 regulares + 9 contingência
+2025-01-15 10:21:44,758 - INFO - Alocadas 79 urnas regulares modelo 2013 (restam 1063 no estoque)
+2025-01-15 10:21:44,758 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,758 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,758 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,759 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1054 no estoque)
+2025-01-15 10:21:44,759 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,759 - INFO - Registro criado: 79 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,759 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,759 - INFO - 
+Iniciando distribuição para zona 11 - 17
+2025-01-15 10:21:44,759 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-15 10:21:44,759 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 976 no estoque)
+2025-01-15 10:21:44,760 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,760 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,760 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,760 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 967 no estoque)
+2025-01-15 10:21:44,760 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,760 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,761 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,761 - INFO - 
+Iniciando distribuição para zona 24 - 31
+2025-01-15 10:21:44,761 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-15 10:21:44,761 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 889 no estoque)
+2025-01-15 10:21:44,761 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,761 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,761 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,762 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 880 no estoque)
+2025-01-15 10:21:44,762 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,762 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,762 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,762 - INFO - 
+Iniciando distribuição para zona 16 - 53
+2025-01-15 10:21:44,763 - INFO - Necessidade da zona: 77 regulares + 9 contingência
+2025-01-15 10:21:44,763 - INFO - Alocadas 77 urnas regulares modelo 2013 (restam 803 no estoque)
+2025-01-15 10:21:44,763 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,763 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,763 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,763 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 794 no estoque)
+2025-01-15 10:21:44,763 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,764 - INFO - Registro criado: 77 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,764 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,764 - INFO - 
+Iniciando distribuição para zona 27 - 32
+2025-01-15 10:21:44,764 - INFO - Necessidade da zona: 76 regulares + 9 contingência
+2025-01-15 10:21:44,764 - INFO - Alocadas 76 urnas regulares modelo 2013 (restam 718 no estoque)
+2025-01-15 10:21:44,764 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,764 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,764 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,765 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 709 no estoque)
+2025-01-15 10:21:44,765 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,765 - INFO - Registro criado: 76 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,766 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,766 - INFO - 
+Iniciando distribuição para zona 6 - 45
+2025-01-15 10:21:44,766 - INFO - Necessidade da zona: 75 regulares + 9 contingência
+2025-01-15 10:21:44,766 - INFO - Alocadas 75 urnas regulares modelo 2013 (restam 634 no estoque)
+2025-01-15 10:21:44,766 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,766 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,766 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,767 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 625 no estoque)
+2025-01-15 10:21:44,767 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,767 - INFO - Registro criado: 75 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,767 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,767 - INFO - 
+Iniciando distribuição para zona 8 - 50
+2025-01-15 10:21:44,767 - INFO - Necessidade da zona: 73 regulares + 8 contingência
+2025-01-15 10:21:44,767 - INFO - Alocadas 73 urnas regulares modelo 2013 (restam 552 no estoque)
+2025-01-15 10:21:44,767 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,767 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,767 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,768 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 544 no estoque)
+2025-01-15 10:21:44,768 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,768 - INFO - Registro criado: 73 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,769 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,769 - INFO - 
+Iniciando distribuição para zona 5 - 15
+2025-01-15 10:21:44,769 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-15 10:21:44,769 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 473 no estoque)
+2025-01-15 10:21:44,769 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,769 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,769 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,770 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 465 no estoque)
+2025-01-15 10:21:44,770 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,770 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,770 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,770 - INFO - 
+Iniciando distribuição para zona 22 - 42
+2025-01-15 10:21:44,770 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-15 10:21:44,770 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 394 no estoque)
+2025-01-15 10:21:44,770 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,770 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,770 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,771 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 386 no estoque)
+2025-01-15 10:21:44,771 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,771 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,772 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,772 - INFO - 
+Iniciando distribuição para zona 30 - 48
+2025-01-15 10:21:44,772 - INFO - Necessidade da zona: 68 regulares + 8 contingência
+2025-01-15 10:21:44,772 - INFO - Alocadas 68 urnas regulares modelo 2013 (restam 318 no estoque)
+2025-01-15 10:21:44,772 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,772 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,772 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,772 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 310 no estoque)
+2025-01-15 10:21:44,772 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,772 - INFO - Registro criado: 68 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,773 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,773 - INFO - 
+Iniciando distribuição para zona 52 - 47
+2025-01-15 10:21:44,773 - INFO - Necessidade da zona: 65 regulares + 7 contingência
+2025-01-15 10:21:44,773 - INFO - Alocadas 65 urnas regulares modelo 2013 (restam 245 no estoque)
+2025-01-15 10:21:44,773 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,773 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,773 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,773 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 238 no estoque)
+2025-01-15 10:21:44,774 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,774 - INFO - Registro criado: 65 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,775 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,775 - INFO - 
+Iniciando distribuição para zona 38 - 2
+2025-01-15 10:21:44,775 - INFO - Necessidade da zona: 60 regulares + 7 contingência
+2025-01-15 10:21:44,775 - INFO - Alocadas 60 urnas regulares modelo 2013 (restam 178 no estoque)
+2025-01-15 10:21:44,775 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,775 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,775 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,776 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 171 no estoque)
+2025-01-15 10:21:44,776 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,776 - INFO - Registro criado: 60 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,776 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,776 - INFO - 
+Iniciando distribuição para zona 35 - 36
+2025-01-15 10:21:44,776 - INFO - Necessidade da zona: 57 regulares + 6 contingência
+2025-01-15 10:21:44,776 - INFO - Alocadas 57 urnas regulares modelo 2013 (restam 114 no estoque)
+2025-01-15 10:21:44,776 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,777 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,777 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,777 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 108 no estoque)
+2025-01-15 10:21:44,777 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,777 - INFO - Registro criado: 57 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,778 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,778 - INFO - 
+Iniciando distribuição para zona 47 - 29
+2025-01-15 10:21:44,778 - INFO - Necessidade da zona: 54 regulares + 6 contingência
+2025-01-15 10:21:44,778 - INFO - Alocadas 54 urnas regulares modelo 2013 (restam 54 no estoque)
+2025-01-15 10:21:44,778 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,778 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,778 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,778 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 48 no estoque)
+2025-01-15 10:21:44,779 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,779 - INFO - Registro criado: 54 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,779 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,779 - INFO - 
+Iniciando distribuição para zona 17 - 56
+2025-01-15 10:21:44,779 - INFO - Necessidade da zona: 43 regulares + 5 contingência
+2025-01-15 10:21:44,779 - INFO - Alocadas 43 urnas regulares modelo 2013 (restam 5 no estoque)
+2025-01-15 10:21:44,779 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-15 10:21:44,779 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-15 10:21:44,779 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-15 10:21:44,780 - INFO - Alocadas 5 urnas de contingência modelo 2013 (restam 0 no estoque)
+2025-01-15 10:21:44,780 - INFO - Criando registros no banco de dados
+2025-01-15 10:21:44,780 - INFO - Registro criado: 43 urnas modelo 2013 (regular)
+2025-01-15 10:21:44,780 - INFO - Registro criado: 5 urnas modelo 2013 (contingência)
+2025-01-15 10:21:44,781 - INFO - 
+Atualizando estoque final
+2025-01-15 10:21:44,781 - INFO - Estoque final modelo 2022: 0 unidades
+2025-01-15 10:21:44,781 - INFO - Estoque final modelo 2020: 0 unidades
+2025-01-15 10:21:44,782 - INFO - Estoque final modelo 2015: 0 unidades
+2025-01-15 10:21:44,782 - INFO - Estoque final modelo 2013: 0 unidades
+2025-01-15 10:21:44,782 - INFO - Resumo da distribuição por zona:
+2025-01-15 10:21:44,782 - INFO - Zona 31 - 39:
+2025-01-15 10:21:44,782 - INFO -  - 364 urnas modelo 2022 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 43 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 1 - 1:
+2025-01-15 10:21:44,782 - INFO -  - 357 urnas modelo 2022 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 46 - 20:
+2025-01-15 10:21:44,782 - INFO -  - 355 urnas modelo 2022 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 33 - 51:
+2025-01-15 10:21:44,782 - INFO -  - 337 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 32 - 55:
+2025-01-15 10:21:44,782 - INFO -  - 334 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 56 - 22:
+2025-01-15 10:21:44,782 - INFO -  - 324 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 57 - 49:
+2025-01-15 10:21:44,782 - INFO -  - 319 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 9 - 9:
+2025-01-15 10:21:44,782 - INFO -  - 318 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,782 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,782 - INFO - Zona 54 - 46:
+2025-01-15 10:21:44,782 - INFO -  - 292 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 35 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 40 - 10:
+2025-01-15 10:21:44,783 - INFO -  - 283 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 33 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 49 - 19:
+2025-01-15 10:21:44,783 - INFO -  - 270 urnas modelo 2020 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 32 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 15 - 43:
+2025-01-15 10:21:44,783 - INFO -  - 251 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 3 urnas modelo 2022 (Contingência)
+2025-01-15 10:21:44,783 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-15 10:21:44,783 - INFO -  - 4 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 18 - 6:
+2025-01-15 10:21:44,783 - INFO -  - 234 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 28 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 3 - 24:
+2025-01-15 10:21:44,783 - INFO -  - 207 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 24 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 39 - 21:
+2025-01-15 10:21:44,783 - INFO -  - 195 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 23 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 45 - 33:
+2025-01-15 10:21:44,783 - INFO -  - 193 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,783 - INFO -  - 23 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,783 - INFO - Zona 51 - 25:
+2025-01-15 10:21:44,785 - INFO -  - 192 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 23 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 53 - 40:
+2025-01-15 10:21:44,785 - INFO -  - 163 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 19 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 28 - 23:
+2025-01-15 10:21:44,785 - INFO -  - 156 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 18 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 25 - 35:
+2025-01-15 10:21:44,785 - INFO -  - 152 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 18 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 42 - 3:
+2025-01-15 10:21:44,785 - INFO -  - 149 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 17 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 23 - 28:
+2025-01-15 10:21:44,785 - INFO -  - 141 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 16 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 43 - 27:
+2025-01-15 10:21:44,785 - INFO -  - 134 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,785 - INFO -  - 16 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,785 - INFO - Zona 44 - 52:
+2025-01-15 10:21:44,785 - INFO -  - 129 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 15 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 34 - 18:
+2025-01-15 10:21:44,786 - INFO -  - 126 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 15 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 10 - 41:
+2025-01-15 10:21:44,786 - INFO -  - 124 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 14 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 14 - 13:
+2025-01-15 10:21:44,786 - INFO -  - 121 urnas modelo 2015 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 14 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 12 - 11:
+2025-01-15 10:21:44,786 - INFO -  - 119 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 14 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 21 - 12:
+2025-01-15 10:21:44,786 - INFO -  - 119 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 14 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 7 - 7:
+2025-01-15 10:21:44,786 - INFO -  - 113 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 13 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 19 - 26:
+2025-01-15 10:21:44,786 - INFO -  - 113 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 5 urnas modelo 2015 (Contingência)
+2025-01-15 10:21:44,786 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,786 - INFO - Zona 2 - 30:
+2025-01-15 10:21:44,786 - INFO -  - 112 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,786 - INFO -  - 13 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 48 - 5:
+2025-01-15 10:21:44,787 - INFO -  - 109 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 13 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 13 - 38:
+2025-01-15 10:21:44,787 - INFO -  - 108 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 12 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 41 - 14:
+2025-01-15 10:21:44,787 - INFO -  - 107 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 12 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 37 - 44:
+2025-01-15 10:21:44,787 - INFO -  - 106 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 12 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 26 - 34:
+2025-01-15 10:21:44,787 - INFO -  - 102 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 12 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 50 - 4:
+2025-01-15 10:21:44,787 - INFO -  - 100 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 12 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 29 - 61:
+2025-01-15 10:21:44,787 - INFO -  - 87 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 10 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,787 - INFO - Zona 20 - 60:
+2025-01-15 10:21:44,787 - INFO -  - 85 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,787 - INFO -  - 10 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 4 - 8:
+2025-01-15 10:21:44,788 - INFO -  - 83 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 55 - 16:
+2025-01-15 10:21:44,788 - INFO -  - 81 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 36 - 57:
+2025-01-15 10:21:44,788 - INFO -  - 79 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 11 - 17:
+2025-01-15 10:21:44,788 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 24 - 31:
+2025-01-15 10:21:44,788 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 16 - 53:
+2025-01-15 10:21:44,788 - INFO -  - 77 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 27 - 32:
+2025-01-15 10:21:44,788 - INFO -  - 76 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 6 - 45:
+2025-01-15 10:21:44,788 - INFO -  - 75 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,788 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,788 - INFO - Zona 8 - 50:
+2025-01-15 10:21:44,789 - INFO -  - 73 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 5 - 15:
+2025-01-15 10:21:44,789 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 22 - 42:
+2025-01-15 10:21:44,789 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 30 - 48:
+2025-01-15 10:21:44,789 - INFO -  - 68 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 52 - 47:
+2025-01-15 10:21:44,789 - INFO -  - 65 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 38 - 2:
+2025-01-15 10:21:44,789 - INFO -  - 60 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 35 - 36:
+2025-01-15 10:21:44,789 - INFO -  - 57 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 47 - 29:
+2025-01-15 10:21:44,789 - INFO -  - 54 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,789 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,789 - INFO - Zona 17 - 56:
+2025-01-15 10:21:44,789 - INFO -  - 43 urnas modelo 2013 (Regular)
+2025-01-15 10:21:44,790 - INFO -  - 5 urnas modelo 2013 (Contingência)
+2025-01-15 10:21:44,792 - INFO - Distribuição concluída com sucesso.
+2025-01-15 10:22:13,671 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-15 10:22:13,672 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-15 10:22:13,672 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-15 10:22:13,672 - INFO - Total de zonas a receber urnas: 57
+2025-01-15 10:22:13,673 - INFO - Estoque disponível por modelo:
+2025-01-15 10:22:13,673 - INFO - Modelo 2022: 0 unidades (Bio: True)
+2025-01-15 10:22:13,673 - INFO - Modelo 2020: 0 unidades (Bio: True)
+2025-01-15 10:22:13,673 - INFO - Modelo 2015: 0 unidades (Bio: True)
+2025-01-15 10:22:13,673 - INFO - Modelo 2013: 0 unidades (Bio: True)
+2025-01-15 10:22:13,673 - ERROR - Estoque insuficiente. Necessário: 9818, Disponível: 0
+2025-01-15 10:22:13,674 - WARNING - Bad Request: /distribuir/
+2025-01-15 10:24:06,242 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-15 10:24:06,243 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-15 10:24:06,244 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-15 10:24:06,244 - INFO - Total de zonas a receber urnas: 57
+2025-01-15 10:24:06,244 - INFO - Estoque disponível por modelo:
+2025-01-15 10:24:06,244 - INFO - Modelo 2022: 0 unidades (Bio: True)
+2025-01-15 10:24:06,244 - INFO - Modelo 2020: 0 unidades (Bio: True)
+2025-01-15 10:24:06,244 - INFO - Modelo 2015: 0 unidades (Bio: True)
+2025-01-15 10:24:06,244 - INFO - Modelo 2013: 0 unidades (Bio: True)
+2025-01-15 10:24:06,244 - ERROR - Estoque insuficiente. Necessário: 9818, Disponível: 0
+2025-01-15 10:24:06,245 - WARNING - Bad Request: /distribuir/
+2025-01-17 07:52:46,904 - WARNING - Not Found: /favicon.ico
+2025-01-17 07:54:43,222 - INFO - D:\TreLogistica\TreLogis\Logis\admin.py changed, reloading.
+2025-01-17 08:07:44,271 - INFO - D:\TreLogistica\TreLogis\Logis\models.py changed, reloading.
+2025-01-17 08:16:54,518 - WARNING - Not Found: /accounts/login/
+2025-01-17 08:18:04,489 - WARNING - Not Found: /upload/Logis/sucess.html
+2025-01-17 08:20:48,790 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-17 08:20:48,791 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-17 08:20:48,791 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-17 08:20:48,791 - INFO - Total de zonas a receber urnas: 57
+2025-01-17 08:20:48,792 - INFO - Estoque disponível por modelo:
+2025-01-17 08:20:48,792 - INFO - Modelo 2022: 4000 unidades (Bio: True)
+2025-01-17 08:20:48,792 - INFO - Modelo 2020: 3000 unidades (Bio: True)
+2025-01-17 08:20:48,792 - INFO - Modelo 2015: 1410 unidades (Bio: True)
+2025-01-17 08:20:48,793 - INFO - Modelo 2013: 1408 unidades (Bio: True)
+2025-01-17 08:20:48,793 - INFO - Inventário inicial: {'2022': 4000, '2020': 3000, '2015': 1410, '2013': 1408}
+2025-01-17 08:20:48,795 - INFO - Removidas 0 urnas de distribuições anteriores
+2025-01-17 08:20:48,795 - INFO - 
+Iniciando distribuição para zona 31 - 39
+2025-01-17 08:20:48,795 - INFO - Necessidade da zona: 364 regulares + 43 contingência
+2025-01-17 08:20:48,796 - ERROR - Erro inesperado durante a distribuição: DistributionLog() got unexpected keyword arguments: 'urna_modelo', 'urna_bio', 'zona_eleitoral'
+2025-01-17 08:20:48,796 - ERROR - Stacktrace completo:
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distribuir.py", line 101, in distribuir_urnas
+    DistributionLog.objects.create(
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: DistributionLog() got unexpected keyword arguments: 'urna_modelo', 'urna_bio', 'zona_eleitoral'
+2025-01-17 08:20:48,833 - ERROR - Internal Server Error: /distribuir/
+2025-01-17 08:21:08,428 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-17 08:21:08,428 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-17 08:21:08,429 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-17 08:21:08,429 - INFO - Total de zonas a receber urnas: 57
+2025-01-17 08:21:08,429 - INFO - Estoque disponível por modelo:
+2025-01-17 08:21:08,430 - INFO - Modelo 2022: 4000 unidades (Bio: True)
+2025-01-17 08:21:08,430 - INFO - Modelo 2020: 3000 unidades (Bio: True)
+2025-01-17 08:21:08,430 - INFO - Modelo 2015: 1410 unidades (Bio: True)
+2025-01-17 08:21:08,430 - INFO - Modelo 2013: 1408 unidades (Bio: True)
+2025-01-17 08:21:08,430 - INFO - Inventário inicial: {'2022': 4000, '2020': 3000, '2015': 1410, '2013': 1408}
+2025-01-17 08:21:08,438 - INFO - Removidas 0 urnas de distribuições anteriores
+2025-01-17 08:21:08,438 - INFO - 
+Iniciando distribuição para zona 31 - 39
+2025-01-17 08:21:08,438 - INFO - Necessidade da zona: 364 regulares + 43 contingência
+2025-01-17 08:21:08,439 - ERROR - Erro inesperado durante a distribuição: DistributionLog() got unexpected keyword arguments: 'urna_modelo', 'urna_bio', 'zona_eleitoral'
+2025-01-17 08:21:08,439 - ERROR - Stacktrace completo:
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distribuir.py", line 101, in distribuir_urnas
+    DistributionLog.objects.create(
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 677, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\base.py", line 567, in __init__
+    raise TypeError(
+TypeError: DistributionLog() got unexpected keyword arguments: 'urna_modelo', 'urna_bio', 'zona_eleitoral'
+2025-01-17 08:21:08,440 - ERROR - Internal Server Error: /distribuir/
+2025-01-17 08:21:26,104 - INFO - D:\TreLogistica\TreLogis\Logis\views\distribuir.py changed, reloading.
+2025-01-17 08:21:32,037 - INFO - Iniciando processo de distribuição a partir da zona de estoque 58
+2025-01-17 08:21:32,037 - INFO - Zona de estoque encontrada: 58 - ZEestoque
+2025-01-17 08:21:32,038 - INFO - Necessidade total: 8789 urnas regulares + 1029 urnas de contingência
+2025-01-17 08:21:32,038 - INFO - Total de zonas a receber urnas: 57
+2025-01-17 08:21:32,039 - INFO - Estoque disponível por modelo:
+2025-01-17 08:21:32,039 - INFO - Modelo 2022: 4000 unidades (Bio: True)
+2025-01-17 08:21:32,039 - INFO - Modelo 2020: 3000 unidades (Bio: True)
+2025-01-17 08:21:32,039 - INFO - Modelo 2015: 1410 unidades (Bio: True)
+2025-01-17 08:21:32,039 - INFO - Modelo 2013: 1408 unidades (Bio: True)
+2025-01-17 08:21:32,040 - INFO - Inventário inicial: {'2022': 4000, '2020': 3000, '2015': 1410, '2013': 1408}
+2025-01-17 08:21:32,040 - INFO - Removidas 0 urnas de distribuições anteriores
+2025-01-17 08:21:32,041 - INFO - 
+Iniciando distribuição para zona 31 - 39
+2025-01-17 08:21:32,041 - INFO - Necessidade da zona: 364 regulares + 43 contingência
+2025-01-17 08:21:32,041 - INFO - Alocadas 364 urnas regulares modelo 2022 (restam 3636 no estoque)
+2025-01-17 08:21:32,041 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,041 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,041 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,041 - INFO - Alocadas 43 urnas de contingência modelo 2022 (restam 3593 no estoque)
+2025-01-17 08:21:32,042 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,043 - INFO - Registro criado: 364 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,044 - INFO - Registro criado: 43 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,044 - INFO - 
+Iniciando distribuição para zona 1 - 1
+2025-01-17 08:21:32,044 - INFO - Necessidade da zona: 357 regulares + 42 contingência
+2025-01-17 08:21:32,044 - INFO - Alocadas 357 urnas regulares modelo 2022 (restam 3236 no estoque)
+2025-01-17 08:21:32,044 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,044 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,044 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,045 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 3194 no estoque)
+2025-01-17 08:21:32,045 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,045 - INFO - Registro criado: 357 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,045 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,045 - INFO - 
+Iniciando distribuição para zona 46 - 20
+2025-01-17 08:21:32,045 - INFO - Necessidade da zona: 355 regulares + 42 contingência
+2025-01-17 08:21:32,045 - INFO - Alocadas 355 urnas regulares modelo 2022 (restam 2839 no estoque)
+2025-01-17 08:21:32,045 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,045 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,045 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,046 - INFO - Alocadas 42 urnas de contingência modelo 2022 (restam 2797 no estoque)
+2025-01-17 08:21:32,046 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,046 - INFO - Registro criado: 355 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,047 - INFO - Registro criado: 42 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,047 - INFO - 
+Iniciando distribuição para zona 33 - 51
+2025-01-17 08:21:32,047 - INFO - Necessidade da zona: 337 regulares + 40 contingência
+2025-01-17 08:21:32,047 - INFO - Alocadas 337 urnas regulares modelo 2022 (restam 2460 no estoque)
+2025-01-17 08:21:32,047 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,047 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,047 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,048 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 2420 no estoque)
+2025-01-17 08:21:32,048 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,048 - INFO - Registro criado: 337 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,048 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,048 - INFO - 
+Iniciando distribuição para zona 32 - 55
+2025-01-17 08:21:32,049 - INFO - Necessidade da zona: 334 regulares + 40 contingência
+2025-01-17 08:21:32,049 - INFO - Alocadas 334 urnas regulares modelo 2022 (restam 2086 no estoque)
+2025-01-17 08:21:32,049 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,049 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,049 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,049 - INFO - Alocadas 40 urnas de contingência modelo 2022 (restam 2046 no estoque)
+2025-01-17 08:21:32,049 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,050 - INFO - Registro criado: 334 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,050 - INFO - Registro criado: 40 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,050 - INFO - 
+Iniciando distribuição para zona 56 - 22
+2025-01-17 08:21:32,050 - INFO - Necessidade da zona: 324 regulares + 38 contingência
+2025-01-17 08:21:32,050 - INFO - Alocadas 324 urnas regulares modelo 2022 (restam 1722 no estoque)
+2025-01-17 08:21:32,050 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,050 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,050 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,051 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 1684 no estoque)
+2025-01-17 08:21:32,051 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,051 - INFO - Registro criado: 324 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,051 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,051 - INFO - 
+Iniciando distribuição para zona 57 - 49
+2025-01-17 08:21:32,052 - INFO - Necessidade da zona: 319 regulares + 38 contingência
+2025-01-17 08:21:32,052 - INFO - Alocadas 319 urnas regulares modelo 2022 (restam 1365 no estoque)
+2025-01-17 08:21:32,052 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,052 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,052 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,052 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 1327 no estoque)
+2025-01-17 08:21:32,052 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,053 - INFO - Registro criado: 319 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,053 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,053 - INFO - 
+Iniciando distribuição para zona 9 - 9
+2025-01-17 08:21:32,053 - INFO - Necessidade da zona: 318 regulares + 38 contingência
+2025-01-17 08:21:32,053 - INFO - Alocadas 318 urnas regulares modelo 2022 (restam 1009 no estoque)
+2025-01-17 08:21:32,053 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,053 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,053 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,054 - INFO - Alocadas 38 urnas de contingência modelo 2022 (restam 971 no estoque)
+2025-01-17 08:21:32,054 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,054 - INFO - Registro criado: 318 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,055 - INFO - Registro criado: 38 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,055 - INFO - 
+Iniciando distribuição para zona 54 - 46
+2025-01-17 08:21:32,055 - INFO - Necessidade da zona: 292 regulares + 35 contingência
+2025-01-17 08:21:32,055 - INFO - Alocadas 292 urnas regulares modelo 2022 (restam 679 no estoque)
+2025-01-17 08:21:32,055 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,055 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,055 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,056 - INFO - Alocadas 35 urnas de contingência modelo 2022 (restam 644 no estoque)
+2025-01-17 08:21:32,056 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,056 - INFO - Registro criado: 292 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,056 - INFO - Registro criado: 35 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,056 - INFO - 
+Iniciando distribuição para zona 40 - 10
+2025-01-17 08:21:32,057 - INFO - Necessidade da zona: 283 regulares + 33 contingência
+2025-01-17 08:21:32,057 - INFO - Alocadas 283 urnas regulares modelo 2022 (restam 361 no estoque)
+2025-01-17 08:21:32,057 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,057 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,057 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,057 - INFO - Alocadas 33 urnas de contingência modelo 2022 (restam 328 no estoque)
+2025-01-17 08:21:32,058 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,058 - INFO - Registro criado: 283 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,058 - INFO - Registro criado: 33 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,058 - INFO - 
+Iniciando distribuição para zona 49 - 19
+2025-01-17 08:21:32,058 - INFO - Necessidade da zona: 270 regulares + 32 contingência
+2025-01-17 08:21:32,058 - INFO - Alocadas 270 urnas regulares modelo 2022 (restam 58 no estoque)
+2025-01-17 08:21:32,059 - INFO - Modelo usado para urnas regulares: 2022
+2025-01-17 08:21:32,059 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,059 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,059 - INFO - Alocadas 32 urnas de contingência modelo 2022 (restam 26 no estoque)
+2025-01-17 08:21:32,059 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,060 - INFO - Registro criado: 270 urnas modelo 2022 (regular)
+2025-01-17 08:21:32,060 - INFO - Registro criado: 32 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,061 - INFO - 
+Iniciando distribuição para zona 15 - 43
+2025-01-17 08:21:32,061 - INFO - Necessidade da zona: 251 regulares + 30 contingência
+2025-01-17 08:21:32,061 - INFO - Alocadas 251 urnas regulares modelo 2020 (restam 2749 no estoque)
+2025-01-17 08:21:32,061 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,061 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,061 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,061 - INFO - Alocadas 26 urnas de contingência modelo 2022 (restam 0 no estoque)
+2025-01-17 08:21:32,061 - INFO - Alocadas 4 urnas de contingência modelo 2020 (restam 2745 no estoque)
+2025-01-17 08:21:32,061 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,085 - INFO - Registro criado: 251 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,086 - INFO - Registro criado: 26 urnas modelo 2022 (contingência)
+2025-01-17 08:21:32,086 - INFO - Registro criado: 4 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,086 - INFO - 
+Iniciando distribuição para zona 18 - 6
+2025-01-17 08:21:32,086 - INFO - Necessidade da zona: 234 regulares + 28 contingência
+2025-01-17 08:21:32,086 - INFO - Alocadas 234 urnas regulares modelo 2020 (restam 2511 no estoque)
+2025-01-17 08:21:32,086 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,086 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,086 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,087 - INFO - Alocadas 28 urnas de contingência modelo 2020 (restam 2483 no estoque)
+2025-01-17 08:21:32,087 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,087 - INFO - Registro criado: 234 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,088 - INFO - Registro criado: 28 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,088 - INFO - 
+Iniciando distribuição para zona 3 - 24
+2025-01-17 08:21:32,088 - INFO - Necessidade da zona: 207 regulares + 24 contingência
+2025-01-17 08:21:32,088 - INFO - Alocadas 207 urnas regulares modelo 2020 (restam 2276 no estoque)
+2025-01-17 08:21:32,088 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,088 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,088 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,089 - INFO - Alocadas 24 urnas de contingência modelo 2020 (restam 2252 no estoque)
+2025-01-17 08:21:32,089 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,089 - INFO - Registro criado: 207 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,089 - INFO - Registro criado: 24 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,089 - INFO - 
+Iniciando distribuição para zona 39 - 21
+2025-01-17 08:21:32,089 - INFO - Necessidade da zona: 195 regulares + 23 contingência
+2025-01-17 08:21:32,090 - INFO - Alocadas 195 urnas regulares modelo 2020 (restam 2057 no estoque)
+2025-01-17 08:21:32,090 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,090 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,090 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,090 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 2034 no estoque)
+2025-01-17 08:21:32,090 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,091 - INFO - Registro criado: 195 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,091 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,091 - INFO - 
+Iniciando distribuição para zona 45 - 33
+2025-01-17 08:21:32,091 - INFO - Necessidade da zona: 193 regulares + 23 contingência
+2025-01-17 08:21:32,091 - INFO - Alocadas 193 urnas regulares modelo 2020 (restam 1841 no estoque)
+2025-01-17 08:21:32,091 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,091 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,091 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,092 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 1818 no estoque)
+2025-01-17 08:21:32,092 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,092 - INFO - Registro criado: 193 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,092 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,092 - INFO - 
+Iniciando distribuição para zona 51 - 25
+2025-01-17 08:21:32,093 - INFO - Necessidade da zona: 192 regulares + 23 contingência
+2025-01-17 08:21:32,093 - INFO - Alocadas 192 urnas regulares modelo 2020 (restam 1626 no estoque)
+2025-01-17 08:21:32,093 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,093 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,093 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,093 - INFO - Alocadas 23 urnas de contingência modelo 2020 (restam 1603 no estoque)
+2025-01-17 08:21:32,093 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,094 - INFO - Registro criado: 192 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,094 - INFO - Registro criado: 23 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,094 - INFO - 
+Iniciando distribuição para zona 53 - 40
+2025-01-17 08:21:32,094 - INFO - Necessidade da zona: 163 regulares + 19 contingência
+2025-01-17 08:21:32,094 - INFO - Alocadas 163 urnas regulares modelo 2020 (restam 1440 no estoque)
+2025-01-17 08:21:32,094 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,094 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,094 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,095 - INFO - Alocadas 19 urnas de contingência modelo 2020 (restam 1421 no estoque)
+2025-01-17 08:21:32,095 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,095 - INFO - Registro criado: 163 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,095 - INFO - Registro criado: 19 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,096 - INFO - 
+Iniciando distribuição para zona 28 - 23
+2025-01-17 08:21:32,096 - INFO - Necessidade da zona: 156 regulares + 18 contingência
+2025-01-17 08:21:32,096 - INFO - Alocadas 156 urnas regulares modelo 2020 (restam 1265 no estoque)
+2025-01-17 08:21:32,096 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,096 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,096 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,096 - INFO - Alocadas 18 urnas de contingência modelo 2020 (restam 1247 no estoque)
+2025-01-17 08:21:32,097 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,097 - INFO - Registro criado: 156 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,097 - INFO - Registro criado: 18 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,097 - INFO - 
+Iniciando distribuição para zona 25 - 35
+2025-01-17 08:21:32,097 - INFO - Necessidade da zona: 152 regulares + 18 contingência
+2025-01-17 08:21:32,097 - INFO - Alocadas 152 urnas regulares modelo 2020 (restam 1095 no estoque)
+2025-01-17 08:21:32,097 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,097 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,098 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,098 - INFO - Alocadas 18 urnas de contingência modelo 2020 (restam 1077 no estoque)
+2025-01-17 08:21:32,098 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,098 - INFO - Registro criado: 152 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,099 - INFO - Registro criado: 18 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,099 - INFO - 
+Iniciando distribuição para zona 42 - 3
+2025-01-17 08:21:32,099 - INFO - Necessidade da zona: 149 regulares + 17 contingência
+2025-01-17 08:21:32,099 - INFO - Alocadas 149 urnas regulares modelo 2020 (restam 928 no estoque)
+2025-01-17 08:21:32,099 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,099 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,099 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,100 - INFO - Alocadas 17 urnas de contingência modelo 2020 (restam 911 no estoque)
+2025-01-17 08:21:32,100 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,100 - INFO - Registro criado: 149 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,100 - INFO - Registro criado: 17 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,100 - INFO - 
+Iniciando distribuição para zona 23 - 28
+2025-01-17 08:21:32,100 - INFO - Necessidade da zona: 141 regulares + 16 contingência
+2025-01-17 08:21:32,101 - INFO - Alocadas 141 urnas regulares modelo 2020 (restam 770 no estoque)
+2025-01-17 08:21:32,101 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,101 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,101 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,101 - INFO - Alocadas 16 urnas de contingência modelo 2020 (restam 754 no estoque)
+2025-01-17 08:21:32,102 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,102 - INFO - Registro criado: 141 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,102 - INFO - Registro criado: 16 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,102 - INFO - 
+Iniciando distribuição para zona 43 - 27
+2025-01-17 08:21:32,102 - INFO - Necessidade da zona: 134 regulares + 16 contingência
+2025-01-17 08:21:32,102 - INFO - Alocadas 134 urnas regulares modelo 2020 (restam 620 no estoque)
+2025-01-17 08:21:32,102 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,102 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,102 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,103 - INFO - Alocadas 16 urnas de contingência modelo 2020 (restam 604 no estoque)
+2025-01-17 08:21:32,103 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,103 - INFO - Registro criado: 134 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,104 - INFO - Registro criado: 16 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,104 - INFO - 
+Iniciando distribuição para zona 44 - 52
+2025-01-17 08:21:32,104 - INFO - Necessidade da zona: 129 regulares + 15 contingência
+2025-01-17 08:21:32,104 - INFO - Alocadas 129 urnas regulares modelo 2020 (restam 475 no estoque)
+2025-01-17 08:21:32,104 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,104 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,104 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,104 - INFO - Alocadas 15 urnas de contingência modelo 2020 (restam 460 no estoque)
+2025-01-17 08:21:32,104 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,105 - INFO - Registro criado: 129 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,105 - INFO - Registro criado: 15 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,105 - INFO - 
+Iniciando distribuição para zona 34 - 18
+2025-01-17 08:21:32,105 - INFO - Necessidade da zona: 126 regulares + 15 contingência
+2025-01-17 08:21:32,105 - INFO - Alocadas 126 urnas regulares modelo 2020 (restam 334 no estoque)
+2025-01-17 08:21:32,105 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,105 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,105 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,106 - INFO - Alocadas 15 urnas de contingência modelo 2020 (restam 319 no estoque)
+2025-01-17 08:21:32,106 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,106 - INFO - Registro criado: 126 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,107 - INFO - Registro criado: 15 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,107 - INFO - 
+Iniciando distribuição para zona 10 - 41
+2025-01-17 08:21:32,107 - INFO - Necessidade da zona: 124 regulares + 14 contingência
+2025-01-17 08:21:32,107 - INFO - Alocadas 124 urnas regulares modelo 2020 (restam 195 no estoque)
+2025-01-17 08:21:32,107 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,107 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,107 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,107 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 181 no estoque)
+2025-01-17 08:21:32,108 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,108 - INFO - Registro criado: 124 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,108 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,108 - INFO - 
+Iniciando distribuição para zona 14 - 13
+2025-01-17 08:21:32,108 - INFO - Necessidade da zona: 121 regulares + 14 contingência
+2025-01-17 08:21:32,108 - INFO - Alocadas 121 urnas regulares modelo 2020 (restam 60 no estoque)
+2025-01-17 08:21:32,108 - INFO - Modelo usado para urnas regulares: 2020
+2025-01-17 08:21:32,108 - INFO - Modelos compatíveis para contingência: ['2022', '2020']
+2025-01-17 08:21:32,109 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,109 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 46 no estoque)
+2025-01-17 08:21:32,109 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,110 - INFO - Registro criado: 121 urnas modelo 2020 (regular)
+2025-01-17 08:21:32,110 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,110 - INFO - 
+Iniciando distribuição para zona 12 - 11
+2025-01-17 08:21:32,110 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-17 08:21:32,110 - INFO - Alocadas 119 urnas regulares modelo 2015 (restam 1291 no estoque)
+2025-01-17 08:21:32,110 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,110 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,110 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,111 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 32 no estoque)
+2025-01-17 08:21:32,111 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,111 - INFO - Registro criado: 119 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,112 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,112 - INFO - 
+Iniciando distribuição para zona 21 - 12
+2025-01-17 08:21:32,112 - INFO - Necessidade da zona: 119 regulares + 14 contingência
+2025-01-17 08:21:32,112 - INFO - Alocadas 119 urnas regulares modelo 2015 (restam 1172 no estoque)
+2025-01-17 08:21:32,112 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,112 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,112 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,112 - INFO - Alocadas 14 urnas de contingência modelo 2020 (restam 18 no estoque)
+2025-01-17 08:21:32,112 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,113 - INFO - Registro criado: 119 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,113 - INFO - Registro criado: 14 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,113 - INFO - 
+Iniciando distribuição para zona 7 - 7
+2025-01-17 08:21:32,113 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-17 08:21:32,113 - INFO - Alocadas 113 urnas regulares modelo 2015 (restam 1059 no estoque)
+2025-01-17 08:21:32,113 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,113 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,113 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,114 - INFO - Alocadas 13 urnas de contingência modelo 2020 (restam 5 no estoque)
+2025-01-17 08:21:32,114 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,114 - INFO - Registro criado: 113 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,115 - INFO - Registro criado: 13 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,115 - INFO - 
+Iniciando distribuição para zona 19 - 26
+2025-01-17 08:21:32,115 - INFO - Necessidade da zona: 113 regulares + 13 contingência
+2025-01-17 08:21:32,115 - INFO - Alocadas 113 urnas regulares modelo 2015 (restam 946 no estoque)
+2025-01-17 08:21:32,115 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,115 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,115 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,116 - INFO - Alocadas 5 urnas de contingência modelo 2020 (restam 0 no estoque)
+2025-01-17 08:21:32,116 - INFO - Alocadas 8 urnas de contingência modelo 2015 (restam 938 no estoque)
+2025-01-17 08:21:32,116 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,116 - INFO - Registro criado: 113 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,116 - INFO - Registro criado: 5 urnas modelo 2020 (contingência)
+2025-01-17 08:21:32,117 - INFO - Registro criado: 8 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,117 - INFO - 
+Iniciando distribuição para zona 2 - 30
+2025-01-17 08:21:32,117 - INFO - Necessidade da zona: 112 regulares + 13 contingência
+2025-01-17 08:21:32,117 - INFO - Alocadas 112 urnas regulares modelo 2015 (restam 826 no estoque)
+2025-01-17 08:21:32,117 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,117 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,117 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,118 - INFO - Alocadas 13 urnas de contingência modelo 2015 (restam 813 no estoque)
+2025-01-17 08:21:32,118 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,118 - INFO - Registro criado: 112 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,118 - INFO - Registro criado: 13 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,119 - INFO - 
+Iniciando distribuição para zona 48 - 5
+2025-01-17 08:21:32,119 - INFO - Necessidade da zona: 109 regulares + 13 contingência
+2025-01-17 08:21:32,119 - INFO - Alocadas 109 urnas regulares modelo 2015 (restam 704 no estoque)
+2025-01-17 08:21:32,119 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,119 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,119 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,119 - INFO - Alocadas 13 urnas de contingência modelo 2015 (restam 691 no estoque)
+2025-01-17 08:21:32,119 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,120 - INFO - Registro criado: 109 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,120 - INFO - Registro criado: 13 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,120 - INFO - 
+Iniciando distribuição para zona 13 - 38
+2025-01-17 08:21:32,120 - INFO - Necessidade da zona: 108 regulares + 12 contingência
+2025-01-17 08:21:32,120 - INFO - Alocadas 108 urnas regulares modelo 2015 (restam 583 no estoque)
+2025-01-17 08:21:32,120 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,120 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,120 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,121 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 571 no estoque)
+2025-01-17 08:21:32,121 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,121 - INFO - Registro criado: 108 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,122 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,122 - INFO - 
+Iniciando distribuição para zona 41 - 14
+2025-01-17 08:21:32,122 - INFO - Necessidade da zona: 107 regulares + 12 contingência
+2025-01-17 08:21:32,122 - INFO - Alocadas 107 urnas regulares modelo 2015 (restam 464 no estoque)
+2025-01-17 08:21:32,122 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,122 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,122 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,123 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 452 no estoque)
+2025-01-17 08:21:32,123 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,123 - INFO - Registro criado: 107 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,123 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,123 - INFO - 
+Iniciando distribuição para zona 37 - 44
+2025-01-17 08:21:32,123 - INFO - Necessidade da zona: 106 regulares + 12 contingência
+2025-01-17 08:21:32,123 - INFO - Alocadas 106 urnas regulares modelo 2015 (restam 346 no estoque)
+2025-01-17 08:21:32,124 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,124 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,124 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,124 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 334 no estoque)
+2025-01-17 08:21:32,124 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,125 - INFO - Registro criado: 106 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,125 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,125 - INFO - 
+Iniciando distribuição para zona 26 - 34
+2025-01-17 08:21:32,125 - INFO - Necessidade da zona: 102 regulares + 12 contingência
+2025-01-17 08:21:32,125 - INFO - Alocadas 102 urnas regulares modelo 2015 (restam 232 no estoque)
+2025-01-17 08:21:32,125 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,125 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,125 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,126 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 220 no estoque)
+2025-01-17 08:21:32,126 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,126 - INFO - Registro criado: 102 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,126 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,127 - INFO - 
+Iniciando distribuição para zona 50 - 4
+2025-01-17 08:21:32,127 - INFO - Necessidade da zona: 100 regulares + 12 contingência
+2025-01-17 08:21:32,127 - INFO - Alocadas 100 urnas regulares modelo 2015 (restam 120 no estoque)
+2025-01-17 08:21:32,127 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,127 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,127 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,127 - INFO - Alocadas 12 urnas de contingência modelo 2015 (restam 108 no estoque)
+2025-01-17 08:21:32,127 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,128 - INFO - Registro criado: 100 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,128 - INFO - Registro criado: 12 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,128 - INFO - 
+Iniciando distribuição para zona 29 - 61
+2025-01-17 08:21:32,128 - INFO - Necessidade da zona: 87 regulares + 10 contingência
+2025-01-17 08:21:32,128 - INFO - Alocadas 87 urnas regulares modelo 2015 (restam 21 no estoque)
+2025-01-17 08:21:32,128 - INFO - Modelo usado para urnas regulares: 2015
+2025-01-17 08:21:32,128 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,128 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,129 - INFO - Alocadas 10 urnas de contingência modelo 2015 (restam 11 no estoque)
+2025-01-17 08:21:32,129 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,129 - INFO - Registro criado: 87 urnas modelo 2015 (regular)
+2025-01-17 08:21:32,129 - INFO - Registro criado: 10 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,130 - INFO - 
+Iniciando distribuição para zona 20 - 60
+2025-01-17 08:21:32,130 - INFO - Necessidade da zona: 85 regulares + 10 contingência
+2025-01-17 08:21:32,130 - INFO - Alocadas 85 urnas regulares modelo 2013 (restam 1323 no estoque)
+2025-01-17 08:21:32,130 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,130 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,130 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,130 - INFO - Alocadas 10 urnas de contingência modelo 2015 (restam 1 no estoque)
+2025-01-17 08:21:32,130 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,131 - INFO - Registro criado: 85 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,131 - INFO - Registro criado: 10 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,131 - INFO - 
+Iniciando distribuição para zona 4 - 8
+2025-01-17 08:21:32,131 - INFO - Necessidade da zona: 83 regulares + 9 contingência
+2025-01-17 08:21:32,131 - INFO - Alocadas 83 urnas regulares modelo 2013 (restam 1240 no estoque)
+2025-01-17 08:21:32,131 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,131 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,131 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,132 - INFO - Alocadas 1 urnas de contingência modelo 2015 (restam 0 no estoque)
+2025-01-17 08:21:32,132 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 1232 no estoque)
+2025-01-17 08:21:32,132 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,132 - INFO - Registro criado: 83 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,133 - INFO - Registro criado: 1 urnas modelo 2015 (contingência)
+2025-01-17 08:21:32,133 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,133 - INFO - 
+Iniciando distribuição para zona 55 - 16
+2025-01-17 08:21:32,133 - INFO - Necessidade da zona: 81 regulares + 9 contingência
+2025-01-17 08:21:32,133 - INFO - Alocadas 81 urnas regulares modelo 2013 (restam 1151 no estoque)
+2025-01-17 08:21:32,133 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,133 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,133 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,134 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1142 no estoque)
+2025-01-17 08:21:32,134 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,135 - INFO - Registro criado: 81 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,135 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,135 - INFO - 
+Iniciando distribuição para zona 36 - 57
+2025-01-17 08:21:32,135 - INFO - Necessidade da zona: 79 regulares + 9 contingência
+2025-01-17 08:21:32,135 - INFO - Alocadas 79 urnas regulares modelo 2013 (restam 1063 no estoque)
+2025-01-17 08:21:32,135 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,135 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,135 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,136 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 1054 no estoque)
+2025-01-17 08:21:32,136 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,136 - INFO - Registro criado: 79 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,136 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,136 - INFO - 
+Iniciando distribuição para zona 11 - 17
+2025-01-17 08:21:32,136 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-17 08:21:32,136 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 976 no estoque)
+2025-01-17 08:21:32,137 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,137 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,137 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,137 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 967 no estoque)
+2025-01-17 08:21:32,137 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,138 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,138 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,138 - INFO - 
+Iniciando distribuição para zona 24 - 31
+2025-01-17 08:21:32,138 - INFO - Necessidade da zona: 78 regulares + 9 contingência
+2025-01-17 08:21:32,138 - INFO - Alocadas 78 urnas regulares modelo 2013 (restam 889 no estoque)
+2025-01-17 08:21:32,138 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,138 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,138 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,139 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 880 no estoque)
+2025-01-17 08:21:32,139 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,139 - INFO - Registro criado: 78 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,139 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,139 - INFO - 
+Iniciando distribuição para zona 16 - 53
+2025-01-17 08:21:32,139 - INFO - Necessidade da zona: 77 regulares + 9 contingência
+2025-01-17 08:21:32,140 - INFO - Alocadas 77 urnas regulares modelo 2013 (restam 803 no estoque)
+2025-01-17 08:21:32,140 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,140 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,140 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,140 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 794 no estoque)
+2025-01-17 08:21:32,140 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,141 - INFO - Registro criado: 77 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,141 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,141 - INFO - 
+Iniciando distribuição para zona 27 - 32
+2025-01-17 08:21:32,141 - INFO - Necessidade da zona: 76 regulares + 9 contingência
+2025-01-17 08:21:32,141 - INFO - Alocadas 76 urnas regulares modelo 2013 (restam 718 no estoque)
+2025-01-17 08:21:32,141 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,141 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,141 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,142 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 709 no estoque)
+2025-01-17 08:21:32,142 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,142 - INFO - Registro criado: 76 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,143 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,143 - INFO - 
+Iniciando distribuição para zona 6 - 45
+2025-01-17 08:21:32,143 - INFO - Necessidade da zona: 75 regulares + 9 contingência
+2025-01-17 08:21:32,143 - INFO - Alocadas 75 urnas regulares modelo 2013 (restam 634 no estoque)
+2025-01-17 08:21:32,143 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,143 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,143 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,143 - INFO - Alocadas 9 urnas de contingência modelo 2013 (restam 625 no estoque)
+2025-01-17 08:21:32,143 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,144 - INFO - Registro criado: 75 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,144 - INFO - Registro criado: 9 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,144 - INFO - 
+Iniciando distribuição para zona 8 - 50
+2025-01-17 08:21:32,144 - INFO - Necessidade da zona: 73 regulares + 8 contingência
+2025-01-17 08:21:32,144 - INFO - Alocadas 73 urnas regulares modelo 2013 (restam 552 no estoque)
+2025-01-17 08:21:32,144 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,144 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,144 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,145 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 544 no estoque)
+2025-01-17 08:21:32,145 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,145 - INFO - Registro criado: 73 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,146 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,146 - INFO - 
+Iniciando distribuição para zona 5 - 15
+2025-01-17 08:21:32,146 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-17 08:21:32,146 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 473 no estoque)
+2025-01-17 08:21:32,146 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,146 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,146 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,146 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 465 no estoque)
+2025-01-17 08:21:32,147 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,147 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,147 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,147 - INFO - 
+Iniciando distribuição para zona 22 - 42
+2025-01-17 08:21:32,147 - INFO - Necessidade da zona: 71 regulares + 8 contingência
+2025-01-17 08:21:32,147 - INFO - Alocadas 71 urnas regulares modelo 2013 (restam 394 no estoque)
+2025-01-17 08:21:32,147 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,148 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,148 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,148 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 386 no estoque)
+2025-01-17 08:21:32,148 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,148 - INFO - Registro criado: 71 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,149 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,149 - INFO - 
+Iniciando distribuição para zona 30 - 48
+2025-01-17 08:21:32,149 - INFO - Necessidade da zona: 68 regulares + 8 contingência
+2025-01-17 08:21:32,149 - INFO - Alocadas 68 urnas regulares modelo 2013 (restam 318 no estoque)
+2025-01-17 08:21:32,149 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,149 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,149 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,150 - INFO - Alocadas 8 urnas de contingência modelo 2013 (restam 310 no estoque)
+2025-01-17 08:21:32,150 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,150 - INFO - Registro criado: 68 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,150 - INFO - Registro criado: 8 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,150 - INFO - 
+Iniciando distribuição para zona 52 - 47
+2025-01-17 08:21:32,151 - INFO - Necessidade da zona: 65 regulares + 7 contingência
+2025-01-17 08:21:32,151 - INFO - Alocadas 65 urnas regulares modelo 2013 (restam 245 no estoque)
+2025-01-17 08:21:32,151 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,151 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,151 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,151 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 238 no estoque)
+2025-01-17 08:21:32,151 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,152 - INFO - Registro criado: 65 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,152 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,152 - INFO - 
+Iniciando distribuição para zona 38 - 2
+2025-01-17 08:21:32,152 - INFO - Necessidade da zona: 60 regulares + 7 contingência
+2025-01-17 08:21:32,152 - INFO - Alocadas 60 urnas regulares modelo 2013 (restam 178 no estoque)
+2025-01-17 08:21:32,152 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,152 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,152 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,153 - INFO - Alocadas 7 urnas de contingência modelo 2013 (restam 171 no estoque)
+2025-01-17 08:21:32,153 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,153 - INFO - Registro criado: 60 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,153 - INFO - Registro criado: 7 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,154 - INFO - 
+Iniciando distribuição para zona 35 - 36
+2025-01-17 08:21:32,154 - INFO - Necessidade da zona: 57 regulares + 6 contingência
+2025-01-17 08:21:32,154 - INFO - Alocadas 57 urnas regulares modelo 2013 (restam 114 no estoque)
+2025-01-17 08:21:32,154 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,154 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,154 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,155 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 108 no estoque)
+2025-01-17 08:21:32,155 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,155 - INFO - Registro criado: 57 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,155 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,156 - INFO - 
+Iniciando distribuição para zona 47 - 29
+2025-01-17 08:21:32,156 - INFO - Necessidade da zona: 54 regulares + 6 contingência
+2025-01-17 08:21:32,156 - INFO - Alocadas 54 urnas regulares modelo 2013 (restam 54 no estoque)
+2025-01-17 08:21:32,156 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,156 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,156 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,156 - INFO - Alocadas 6 urnas de contingência modelo 2013 (restam 48 no estoque)
+2025-01-17 08:21:32,157 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,157 - INFO - Registro criado: 54 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,157 - INFO - Registro criado: 6 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,157 - INFO - 
+Iniciando distribuição para zona 17 - 56
+2025-01-17 08:21:32,157 - INFO - Necessidade da zona: 43 regulares + 5 contingência
+2025-01-17 08:21:32,157 - INFO - Alocadas 43 urnas regulares modelo 2013 (restam 5 no estoque)
+2025-01-17 08:21:32,157 - INFO - Modelo usado para urnas regulares: 2013
+2025-01-17 08:21:32,157 - INFO - Modelos compatíveis para contingência: ['2022', '2020', '2015', '2013']
+2025-01-17 08:21:32,157 - INFO - Iniciando distribuição de urnas de contingência
+2025-01-17 08:21:32,158 - INFO - Alocadas 5 urnas de contingência modelo 2013 (restam 0 no estoque)
+2025-01-17 08:21:32,158 - INFO - Criando registros no banco de dados
+2025-01-17 08:21:32,158 - INFO - Registro criado: 43 urnas modelo 2013 (regular)
+2025-01-17 08:21:32,158 - INFO - Registro criado: 5 urnas modelo 2013 (contingência)
+2025-01-17 08:21:32,159 - INFO - 
+Atualizando estoque final
+2025-01-17 08:21:32,159 - INFO - Estoque final modelo 2022: 0 unidades
+2025-01-17 08:21:32,160 - INFO - Estoque final modelo 2020: 0 unidades
+2025-01-17 08:21:32,160 - INFO - Estoque final modelo 2015: 0 unidades
+2025-01-17 08:21:32,161 - INFO - Estoque final modelo 2013: 0 unidades
+2025-01-17 08:21:32,161 - INFO - Resumo da distribuição por zona:
+2025-01-17 08:21:32,161 - INFO - Zona 31 - 39:
+2025-01-17 08:21:32,161 - INFO -  - 364 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 43 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 1 - 1:
+2025-01-17 08:21:32,161 - INFO -  - 357 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 46 - 20:
+2025-01-17 08:21:32,161 - INFO -  - 355 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 42 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 33 - 51:
+2025-01-17 08:21:32,161 - INFO -  - 337 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 32 - 55:
+2025-01-17 08:21:32,161 - INFO -  - 334 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 40 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 56 - 22:
+2025-01-17 08:21:32,161 - INFO -  - 324 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 57 - 49:
+2025-01-17 08:21:32,161 - INFO -  - 319 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 9 - 9:
+2025-01-17 08:21:32,161 - INFO -  - 318 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 38 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,161 - INFO - Zona 54 - 46:
+2025-01-17 08:21:32,161 - INFO -  - 292 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,161 - INFO -  - 35 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 40 - 10:
+2025-01-17 08:21:32,162 - INFO -  - 283 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 33 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 49 - 19:
+2025-01-17 08:21:32,162 - INFO -  - 270 urnas modelo 2022 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 32 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 15 - 43:
+2025-01-17 08:21:32,162 - INFO -  - 251 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 26 urnas modelo 2022 (Contingência)
+2025-01-17 08:21:32,162 - INFO -  - 4 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 18 - 6:
+2025-01-17 08:21:32,162 - INFO -  - 234 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 28 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 3 - 24:
+2025-01-17 08:21:32,162 - INFO -  - 207 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 24 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 39 - 21:
+2025-01-17 08:21:32,162 - INFO -  - 195 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,162 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,162 - INFO - Zona 45 - 33:
+2025-01-17 08:21:32,163 - INFO -  - 193 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 51 - 25:
+2025-01-17 08:21:32,163 - INFO -  - 192 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 23 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 53 - 40:
+2025-01-17 08:21:32,163 - INFO -  - 163 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 19 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 28 - 23:
+2025-01-17 08:21:32,163 - INFO -  - 156 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 18 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 25 - 35:
+2025-01-17 08:21:32,163 - INFO -  - 152 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 18 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 42 - 3:
+2025-01-17 08:21:32,163 - INFO -  - 149 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,163 - INFO -  - 17 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,163 - INFO - Zona 23 - 28:
+2025-01-17 08:21:32,163 - INFO -  - 141 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,164 - INFO -  - 16 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,164 - INFO - Zona 43 - 27:
+2025-01-17 08:21:32,164 - INFO -  - 134 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,164 - INFO -  - 16 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,164 - INFO - Zona 44 - 52:
+2025-01-17 08:21:32,164 - INFO -  - 129 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,164 - INFO -  - 15 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,164 - INFO - Zona 34 - 18:
+2025-01-17 08:21:32,164 - INFO -  - 126 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,165 - INFO -  - 15 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,165 - INFO - Zona 10 - 41:
+2025-01-17 08:21:32,165 - INFO -  - 124 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,165 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,165 - INFO - Zona 14 - 13:
+2025-01-17 08:21:32,165 - INFO -  - 121 urnas modelo 2020 (Regular)
+2025-01-17 08:21:32,165 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,165 - INFO - Zona 12 - 11:
+2025-01-17 08:21:32,165 - INFO -  - 119 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,165 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,165 - INFO - Zona 21 - 12:
+2025-01-17 08:21:32,165 - INFO -  - 119 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 14 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 7 - 7:
+2025-01-17 08:21:32,166 - INFO -  - 113 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 13 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 19 - 26:
+2025-01-17 08:21:32,166 - INFO -  - 113 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 5 urnas modelo 2020 (Contingência)
+2025-01-17 08:21:32,166 - INFO -  - 8 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 2 - 30:
+2025-01-17 08:21:32,166 - INFO -  - 112 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 13 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 48 - 5:
+2025-01-17 08:21:32,166 - INFO -  - 109 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 13 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 13 - 38:
+2025-01-17 08:21:32,166 - INFO -  - 108 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,166 - INFO - Zona 41 - 14:
+2025-01-17 08:21:32,166 - INFO -  - 107 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,166 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 37 - 44:
+2025-01-17 08:21:32,167 - INFO -  - 106 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 26 - 34:
+2025-01-17 08:21:32,167 - INFO -  - 102 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 50 - 4:
+2025-01-17 08:21:32,167 - INFO -  - 100 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 12 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 29 - 61:
+2025-01-17 08:21:32,167 - INFO -  - 87 urnas modelo 2015 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 10 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 20 - 60:
+2025-01-17 08:21:32,167 - INFO -  - 85 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 10 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO - Zona 4 - 8:
+2025-01-17 08:21:32,167 - INFO -  - 83 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,167 - INFO -  - 1 urnas modelo 2015 (Contingência)
+2025-01-17 08:21:32,167 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 55 - 16:
+2025-01-17 08:21:32,168 - INFO -  - 81 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 36 - 57:
+2025-01-17 08:21:32,168 - INFO -  - 79 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 11 - 17:
+2025-01-17 08:21:32,168 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 24 - 31:
+2025-01-17 08:21:32,168 - INFO -  - 78 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 16 - 53:
+2025-01-17 08:21:32,168 - INFO -  - 77 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 27 - 32:
+2025-01-17 08:21:32,168 - INFO -  - 76 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,168 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,168 - INFO - Zona 6 - 45:
+2025-01-17 08:21:32,169 - INFO -  - 75 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 9 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 8 - 50:
+2025-01-17 08:21:32,169 - INFO -  - 73 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 5 - 15:
+2025-01-17 08:21:32,169 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 22 - 42:
+2025-01-17 08:21:32,169 - INFO -  - 71 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 30 - 48:
+2025-01-17 08:21:32,169 - INFO -  - 68 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 8 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 52 - 47:
+2025-01-17 08:21:32,169 - INFO -  - 65 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 38 - 2:
+2025-01-17 08:21:32,169 - INFO -  - 60 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,169 - INFO -  - 7 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,169 - INFO - Zona 35 - 36:
+2025-01-17 08:21:32,170 - INFO -  - 57 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,170 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,170 - INFO - Zona 47 - 29:
+2025-01-17 08:21:32,170 - INFO -  - 54 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,170 - INFO -  - 6 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,170 - INFO - Zona 17 - 56:
+2025-01-17 08:21:32,170 - INFO -  - 43 urnas modelo 2013 (Regular)
+2025-01-17 08:21:32,170 - INFO -  - 5 urnas modelo 2013 (Contingência)
+2025-01-17 08:21:32,172 - INFO - Distribuição concluída com sucesso.
