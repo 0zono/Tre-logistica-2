@@ -29,16 +29,28 @@
                         <a class="dropdown-item" href="{% url 'zona_list2' %}">Listar Cards Zonas</a>
                     </div>
                 </li>
+
+                <!-- Distribuição Dropdown -->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="Adicionar" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Funcionalidades
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDistribuicao" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Distribuição
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="Adicionar">
-                        <a class="dropdown-item" href="{% url 'uploadFile' %}">Upload dados Excel</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownDistribuicao">
                         <a class="dropdown-item" href="{% url 'distribuicao_page' %}">Distribuir Urnas</a>
+                        <a class="dropdown-item" href="{% url 'manual_distribuir_urnas' %}">Distribuição Manual</a>
+                        <a class="dropdown-item" href="{% url 'distribution_history' %}">Histórico de Distribuições</a>
                     </div>
                 </li>
-                
+
+                <!-- Gerenciamento Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownGerenciamento" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Gerenciamento
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownGerenciamento">
+                        <a class="dropdown-item" href="{% url 'uploadFile' %}">Upload dados Excel</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </nav>

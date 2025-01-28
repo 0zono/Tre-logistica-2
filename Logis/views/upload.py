@@ -1,7 +1,7 @@
 from django import forms
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.decorators import login_required
-from ..models import Municipio, Urna, ZonaEleitoral, MunicipioZona, Secao, DistributionLog
+from ..models import Municipio, Urna, ZonaEleitoral, MunicipioZona, Secao
 from django.db.models import Sum, Count
 from django.http import JsonResponse
 import logging

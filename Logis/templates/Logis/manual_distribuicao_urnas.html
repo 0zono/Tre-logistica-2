@@ -1,0 +1,291 @@
+{% extends 'Logis/base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div id="distribution-app">
+        <!-- Initial State -->
+        <div v-if="!started" class="text-center py-5">
+            <h2 class="mb-4">Distribuição de Urnas</h2>
+            
+            <!-- Stock Information -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4>Estoque Disponível - [[ stock.nome ]]</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div v-for="(qty, model) in stock.urnas" class="col-md-3 mb-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modelo [[ model ]]</h5>
+                                    <p class="card-text">[[ qty ]] unidades</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button 
+                @click="startDistribution" 
+                class="btn btn-primary btn-lg">
+                Começar Distribuição
+            </button>
+        </div>
+
+        <!-- Distribution Process -->
+        <div v-else>
+            <!-- Progress Header -->
+            <div class="mb-4">
+                <h3 class="mb-2">
+                    Zona: [[ currentZone.nome ]] 
+                    <small class="text-muted">([[ currentIndex + 1 ]]/[[ zones.length ]])</small>
+                </h3>
+                <div class="progress">
+                    <div 
+                        class="progress-bar" 
+                        :style="{ width: progressPercentage + '%' }">
+                        [[ progressPercentage ]]%
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stock Information -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h5 class="mb-0">Estoque Restante</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div v-for="(qty, model) in remainingStock" class="col-md-3 mb-2">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h6 class="card-title">Modelo [[ model ]]</h6>
+                                    <p class="card-text">[[ qty ]] unidades</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zone Information -->
+            <div class="alert alert-info">
+                <h4 class="alert-heading">Necessidades da Zona:</h4>
+                <p>Urnas regulares necessárias: [[ currentZone.qtdSecoes ]]</p>
+                <p>Urnas de contingência sugeridas: [[ contingencyNeeded ]]</p>
+            </div>
+
+            <!-- Distribution Mode Selection -->
+            <div class="mb-4">
+                <div class="btn-group">
+                    <button 
+                        @click="mode = 'auto'"
+                        :class="['btn', mode === 'auto' ? 'btn-primary' : 'btn-outline-primary']">
+                        Automático
+                    </button>
+                    <button 
+                        @click="mode = 'manual'"
+                        :class="['btn', mode === 'manual' ? 'btn-primary' : 'btn-outline-primary']">
+                        Manual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Auto Mode Form -->
+            <div v-if="mode === 'auto'" class="card mb-4">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Modelo de Urna</label>
+                        <select v-model="selectedModel" class="form-select">
+                            <option value="">Selecione um modelo</option>
+                            <option 
+                                v-for="model in urnaModels" 
+                                :value="model"
+                                :disabled="!remainingStock[model] || remainingStock[model] < currentZone.qtdSecoes">
+                                Modelo [[ model ]] ([[ remainingStock[model] ]] disponíveis)
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Percentual de Contingência</label>
+                        <input 
+                            type="number" 
+                            v-model.number="contingencyPercentage"
+                            class="form-control"
+                            min="0"
+                            max="100">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Manual Mode Form -->
+            <div v-else class="card mb-4">
+                <div class="card-body">
+                    <div v-for="model in urnaModels" :key="model" class="mb-3">
+                        <label class="form-label">
+                            Modelo [[ model ]] ([[ remainingStock[model] ]] disponíveis)
+                        </label>
+                        <input 
+                            type="number"
+                            v-model.number="manualDistributions[currentZone.id][model]"
+                            class="form-control"
+                            min="0"
+                            :max="remainingStock[model]"
+                            placeholder="Quantidade">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="d-flex justify-content-between mt-4">
+                <button 
+                    @click="previousZone"
+                    :disabled="currentIndex === 0"
+                    class="btn btn-secondary">
+                    Anterior
+                </button>
+
+                <button 
+                    v-if="currentIndex === zones.length - 1"
+                    @click="finishDistribution"
+                    class="btn btn-success">
+                    Finalizar Distribuição
+                </button>
+                <button 
+                    v-else
+                    @click="nextZone"
+                    class="btn btn-primary">
+                    Próxima Zona
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Vue.js -->
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script>
+    const { createApp } = Vue
+
+    createApp({
+        delimiters: ['[[', ']]'],
+        data() {
+            return {
+                started: false,
+                currentIndex: 0,
+                mode: 'auto',
+                selectedModel: '',
+                contingencyPercentage: 12,
+                manualDistributions: {},
+                zones: JSON.parse('{{ zonas_json|safe }}'),
+                urnaModels: JSON.parse('{{ urna_models_json|safe }}'),
+                stock: JSON.parse('{{ stock_json|safe }}'),
+                remainingStock: {}
+            }
+        },
+        computed: {
+            currentZone() {
+                return this.zones[this.currentIndex]
+            },
+            progressPercentage() {
+                return Math.round(((this.currentIndex + 1) / this.zones.length) * 100)
+            },
+            contingencyNeeded() {
+                return Math.ceil(this.currentZone.qtdSecoes * (this.contingencyPercentage / 100))
+            }
+        },
+        methods: {
+            startDistribution() {
+                this.started = true
+                // Initialize manual distributions object
+                this.zones.forEach(zone => {
+                    this.manualDistributions[zone.id] = {}
+                    this.urnaModels.forEach(model => {
+                        this.manualDistributions[zone.id][model] = 0
+                    })
+                })
+                // Initialize remaining stock
+                this.remainingStock = {...this.stock.urnas}
+            },
+            previousZone() {
+                if (this.currentIndex > 0) {
+                    // Restore stock from previous distribution
+                    const prevZone = this.zones[this.currentIndex]
+                    Object.entries(this.manualDistributions[prevZone.id]).forEach(([model, qty]) => {
+                        if (model !== 'contingency') {
+                            this.remainingStock[model] += qty
+                        }
+                    })
+                    if (this.manualDistributions[prevZone.id].contingency) {
+                        Object.entries(this.manualDistributions [prevZone.id].contingency).forEach(([model, qty]) => {
+                            this.remainingStock[model] += qty;
+                        });
+                    }
+                    this.currentIndex -= 1;
+                }
+            }, nextZone() {
+                if (this.mode === 'auto') {
+                    if (!this.selectedModel || this.remainingStock[this.selectedModel] < this.currentZone.qtdSecoes) {
+                        alert('Selecione um modelo válido com quantidade suficiente.');
+                        return;
+                    }
+
+                    // Allocate regular urnas
+                    this.remainingStock[this.selectedModel] -= this.currentZone.qtdSecoes;
+                    this.manualDistributions[this.currentZone.id][this.selectedModel] = this.currentZone.qtdSecoes;
+
+                    // Allocate contingency urnas
+                    const contingencyNeeded = this.contingencyNeeded;
+                    Object.keys(this.remainingStock).some((model) => {
+                        if (this.remainingStock[model] >= contingencyNeeded) {
+                            this.remainingStock[model] -= contingencyNeeded;
+                            this.manualDistributions[this.currentZone.id].contingency = {
+                                [model]: contingencyNeeded,
+                            };
+                            return true;
+                        }
+                        return false;
+                    });
+                }
+                this.currentIndex += 1;
+            },
+            finishDistribution() {
+                const finalData = {
+                    zones: this.zones.map((zone) => ({
+                        id: zone.id,
+                        distributions: this.manualDistributions[zone.id],
+                    })),
+                };
+
+                // Send final data to server
+                fetch('{% url "finalize_distribution" %}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}',
+                    },
+                    body: JSON.stringify(finalData),
+                })
+                    .then((response) => {
+                        if (!response.ok) {
+                            throw new Error('Erro ao finalizar a distribuição.');
+                        }
+                        return response.json();
+                    })
+                    .then((data) => {
+                        alert('Distribuição finalizada com sucesso!');
+                        console.log(data);
+                        window.location.reload();
+                    })
+                    .catch((error) => {
+                        console.error(error);
+                        alert('Houve um erro ao finalizar a distribuição.');
+                    });
+            },
+        },
+    }).mount('#distribution-app');
+</script>
+{% endblock %}

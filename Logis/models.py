@@ -57,10 +57,14 @@ class Distribuicao(models.Model):
     distributed_by = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
+    # Updated target_zones field
+    target_zones = models.CharField(max_length=255)  # Store zone names or IDs as a comma-separated string
 
-class DistributionLog(models.Model):
-    distribuicao = models.ForeignKey(Distribuicao, related_name='distribution_logs', on_delete=models.CASCADE)
-    urna = models.ForeignKey(Urna, on_delete=models.CASCADE)
-    quantity = models.IntegerField()
-    distribution_type = models.CharField(max_length=50)
-    
+    # Fields for urna information
+    urna_modelo = models.CharField(max_length=4)  # Model of the urna
+    urna_bio = models.BooleanField()  # If the urna supports biometrics
+    urna_contingencia = models.BooleanField()  # If the urna is for contingency
+    urna_quantity = models.IntegerField()  # Quantity of urnas distributed
+
+    def __str__(self):
+        return f"Distribuição {self.created_at} - Zona {self.stock_zone.nome}"

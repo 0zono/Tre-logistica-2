@@ -1,0 +1,105 @@
+{% extends 'Logis/base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row mb-4">
+        <div class="col">
+            <h2>Histórico de Distribuições</h2>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        {% for group in distribution_groups %}
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="card-title mb-0">{{ group.timestamp|date:"d/m/Y H:i" }}</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6 class="text-muted">Responsável</h6>
+                        <p class="h6">{{ group.distributor.get_full_name|default:group.distributor.username }}</p>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <h6 class="text-muted">Zona de Estoque</h6>
+                        <p class="h6">{{ group.stock_zone.nome }}</p>
+                    </div>
+
+                    <div class="row">
+                        <!-- Urnas Regulares -->
+                        <div class="col-12 mb-3">
+                            <h6 class="border-bottom pb-2">Urnas Regulares</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for modelo, qtd in group.regular_totals.items %}
+                                    {% if qtd > 0 %}
+                                        <div class="badge bg-success text-wrap p-2">
+                                            {{ modelo }}: {{ qtd }}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- Urnas de Contingência -->
+                        <div class="col-12">
+                            <h6 class="border-bottom pb-2">Urnas de Contingência</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for modelo, qtd in group.contingency_totals.items %}
+                                    {% if qtd > 0 %}
+                                        <div class="badge bg-warning text-dark text-wrap p-2">
+                                            {{ modelo }}: {{ qtd }}
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <div class="row text-center">
+                        <div class="col">
+                            <small class="text-muted">Total de Urnas: {{ group.total_urnas }}</small>
+                        </div>
+                    </div>
+                    <a href="{% url 'distribution_detail' zone_id=group.stock_zone.id timestamp=group.timestamp|date:'Y-m-d-H-i' %}">
+                        Ver Detalhes
+                    </a>
+                    
+                    <div class="collapse mt-2" id="details-{{ forloop.counter }}">
+                        <div class="table-responsive">
+                            <table class="table table-sm table-bordered mb-0">
+                                <thead>
+                                    <tr>
+                                        <th>Modelo</th>
+                                        <th>Qtd</th>
+                                        <th>Tipo</th>
+                                        <th>Bio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for dist in group.distributions %}
+                                        <tr>
+                                            <td>{{ dist.urna_modelo }}</td>
+                                            <td>{{ dist.urna_quantity }}</td>
+                                            <td>{% if dist.urna_contingencia %}Contingência{% else %}Regular{% endif %}</td>
+                                            <td>{% if dist.urna_bio %}Sim{% else %}Não{% endif %}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-info" role="alert">
+                Nenhuma distribuição registrada.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
