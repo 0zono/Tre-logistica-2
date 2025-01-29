@@ -1,13 +1,10 @@
 {% extends 'Logis/base.html' %}
-
 {% block title %}Distribuição de Urnas{% endblock %}
-
 {% block content %}
 <div class="container">
     <h2>Distribuição de Urnas</h2>
     <form id="distributeForm" method="post" action="{% url 'distribuir_urnas' %}">
         {% csrf_token %}
-        <!-- Stock Zone Selector -->
         <div class="form-group">
             <label for="stockZoneSelect">Zona Eleitoral de Estoque:</label>
             <select id="stockZoneSelect" name="stock_zona_id" class="form-control" required>
@@ -17,55 +14,9 @@
                 {% endfor %}
             </select>
         </div>
-
-        <!-- Zones Distribution -->
-        <div id="zoneDistributionContainer" style="display: none;">
-            <h3>Definir Distribuição por Zona</h3>
-            {% for zona in zonas %}
-            <div class="zone-distribution" data-zone-id="{{ zona.id }}" style="display: none;">
-                <h4>{{ zona.nome }}</h4>
-                <div class="form-group">
-                    <label>Modelos de Urna:</label>
-                    <div class="row">
-                        {% for modelo in modelos %}
-                        <div class="col-md-4">
-                            <label for="zona-{{ zona.id }}-{{ modelo }}">{{ modelo }}</label>
-                            <input
-                                type="number"
-                                id="zona-{{ zona.id }}-{{ modelo }}"
-                                name="distributions[{{ zona.id }}][{{ modelo }}]"
-                                class="form-control"
-                                min="0"
-                                value="0"
-                                required
-                            >
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="zona-{{ zona.id }}-contingency">Porcentagem de Contingência:</label>
-                    <input
-                        type="number"
-                        id="zona-{{ zona.id }}-contingency"
-                        name="distributions[{{ zona.id }}][contingency]"
-                        class="form-control"
-                        min="0"
-                        max="100"
-                        value="0"
-                        required
-                    >
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary mt-3" style="display: none;" id="submitButton">Distribuir</button>
+        <button type="submit" class="btn btn-primary">Distribuir</button>
     </form>
-
-    <!-- Progress Bar -->
-    <div id="progressContainer" class="mt-3" style="display: none;">
+    <div id="progressContainer" class="mt-3" style="display:none;">
         <div class="progress">
             <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
                 0%
@@ -73,41 +24,14 @@
         </div>
     </div>
 </div>
-
 <script>
-    const stockZoneSelect = document.getElementById('stockZoneSelect');
-    const zoneDistributionContainer = document.getElementById('zoneDistributionContainer');
-    const submitButton = document.getElementById('submitButton');
-
-    stockZoneSelect.addEventListener('change', () => {
-        const selectedStockZoneId = stockZoneSelect.value;
-
-        if (selectedStockZoneId) {
-            // Show zone distribution container
-            zoneDistributionContainer.style.display = 'block';
-            submitButton.style.display = 'inline-block';
-
-            // Show only zones other than the selected stock zone
-            document.querySelectorAll('.zone-distribution').forEach(zoneElement => {
-                const zoneId = zoneElement.getAttribute('data-zone-id');
-                zoneElement.style.display = zoneId !== selectedStockZoneId ? 'block' : 'none';
-            });
-        } else {
-            // Hide everything if no stock zone selected
-            zoneDistributionContainer.style.display = 'none';
-            submitButton.style.display = 'none';
-        }
-    });
-
-    document.getElementById('distributeForm').addEventListener('submit', function (event) {
+    document.getElementById('distributeForm').addEventListener('submit', function(event) {
         event.preventDefault();
         const form = event.target;
         const data = new FormData(form);
         const xhr = new XMLHttpRequest();
-
         xhr.open('POST', form.action, true);
-
-        xhr.upload.addEventListener('progress', function (event) {
+        xhr.upload.addEventListener('progress', function(event) {
             if (event.lengthComputable) {
                 const percentComplete = Math.round((event.loaded / event.total) * 100);
                 const progressBar = document.getElementById('progressBar');
@@ -115,8 +39,7 @@
                 progressBar.innerHTML = percentComplete + '%';
             }
         });
-
-        xhr.onreadystatechange = function () {
+        xhr.onreadystatechange = function() {
             if (xhr.readyState === XMLHttpRequest.DONE) {
                 const progressContainer = document.getElementById('progressContainer');
                 if (xhr.status === 200) {
@@ -128,7 +51,6 @@
                 progressContainer.style.display = 'none';
             }
         };
-
         document.getElementById('progressContainer').style.display = 'block';
         xhr.send(data);
     });
