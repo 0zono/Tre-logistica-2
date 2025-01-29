@@ -8295,3 +8295,5 @@ TypeError: finalize_distribution() missing 1 required positional argument: 'requ
 2025-01-28 09:07:30,370 - INFO - Distribution finalized successfully by user admin
 2025-01-28 09:10:37,331 - INFO - D:\TreLogistica\TreLogis\Logis\views\distrib_manual.py changed, reloading.
 2025-01-28 09:11:13,532 - INFO - Distribution finalized successfully by user admin
+2025-01-29 08:54:00,138 - WARNING - Not Found: /favicon.ico
+2025-01-29 08:54:26,608 - INFO - Distribution completed successfully by user admin
