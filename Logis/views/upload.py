@@ -83,3 +83,7 @@ def import_secoes_data(file_path):
 
         zona.qtdSecoes += 1
         zona.save()
+    ZonaEleitoral.objects.get_or_create(
+        nome='ZEestoque',  
+        defaults={'qtdSecoes': 0}  # não tem seções.
+    )

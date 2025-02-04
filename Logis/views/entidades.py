@@ -3,6 +3,7 @@ from django.http import Http404
 from datetime import datetime
 from ..models import Urna, Municipio, Secao, ZonaEleitoral, Distribuicao
 from django.core.paginator import Paginator
+from django.db import models
 from django.db.models import Q
 from django.db.models import Sum
 from datetime import timedelta
@@ -28,6 +29,7 @@ def urna_list(request):
     
     current_page = urnas.number
     total_pages = paginator.num_pages
+    # Pagination only works with pandas module
     page_range = [
         x for x in range(current_page - 2, current_page + 3)
         if 1 <= x <= total_pages
@@ -64,6 +66,7 @@ def secao_list(request):
     # Calculate the visible page range
     current_page = secoes.number
     total_pages = paginator.num_pages
+
     page_range = [
         x for x in range(current_page - 2, current_page + 3)
         if 1 <= x <= total_pages
@@ -76,10 +79,46 @@ def secao_list(request):
         'total_pages': total_pages,
     })
 
+
 def zona_list(request):
-    zonas = ZonaEleitoral.objects.all()
-    total_secoes = sum(zona.qtdSecoes for zona in zonas)  # Calculate the total
-    return render(request, 'Logis/zona_list.html', {'zonas': zonas, 'total_secoes': total_secoes})
+    # Get listing type from GET parameter, default to 'table'
+    listing_type = request.GET.get('type', 'table')
+    
+    # Retrieve all zones
+    zonas = ZonaEleitoral.objects.exclude(nome='ZEestoque')
+    
+    # Calculate total sections
+    total_secoes = sum(zona.qtdSecoes for zona in zonas)
+    
+    # Calculate total regular and contingency urnas for each model
+    total_urnas_2022 = Urna.objects.filter(modelo='2022', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_urnas_2020 = Urna.objects.filter(modelo='2020', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_urnas_2015 = Urna.objects.filter(modelo='2015', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_urnas_2013 = Urna.objects.filter(modelo='2013', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
+    
+    total_contingencia_2022 = Urna.objects.filter(modelo='2022', contingencia=True).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_contingencia_2020 = Urna.objects.filter(modelo='2020', contingencia=True).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_contingencia_2015 = Urna.objects.filter(modelo='2015', contingencia=True).aggregate(total=models.Sum('qtd'))['total'] or 0
+    total_contingencia_2013 = Urna.objects.filter(modelo='2013', contingencia=True).aggregate(total=models.Sum('qtd'))['total'] or 0
+    
+    context = {
+        'zonas': zonas,
+        'total_secoes': total_secoes,
+        'total_urnas_2022': total_urnas_2022,
+        'total_urnas_2020': total_urnas_2020,
+        'total_urnas_2015': total_urnas_2015,
+        'total_urnas_2013': total_urnas_2013,
+        'total_contingencia_2022': total_contingencia_2022,
+        'total_contingencia_2020': total_contingencia_2020,
+        'total_contingencia_2015': total_contingencia_2015,
+        'total_contingencia_2013': total_contingencia_2013,
+    }
+    
+    # Render the appropriate template based on listing type
+    if listing_type == 'card':
+        return render(request, 'Logis/zona_list.html', context)
+    else:
+        return render(request, 'Logis/zona_list2.html', context)
 
 def zona_list2(request):
     zonas = ZonaEleitoral.objects.all()
@@ -87,10 +126,10 @@ def zona_list2(request):
     return render(request, 'Logis/zona_list2.html', {'zonas': zonas, 'total_secoes': total_secoes})
 
 def distribution_history(request):
-    # Get all distributions ordered by creation time
+    
     distributions = Distribuicao.objects.all().order_by('-created_at')
     
-    # Group distributions by time (within 1 minute tolerance)
+    
     distribution_groups = []
     current_group = []
     current_time = None
@@ -102,7 +141,6 @@ def distribution_history(request):
         elif abs((dist.created_at - current_time).total_seconds()) <= 60:
             current_group.append(dist)
         else:
-            # Process the current group
             if current_group:
                 # Calculate totals for the group
                 regular_totals = defaultdict(int)
@@ -129,7 +167,6 @@ def distribution_history(request):
             current_time = dist.created_at
             current_group = [dist]
     
-    # Don't forget to process the last group
     if current_group:
         regular_totals = defaultdict(int)
         contingency_totals = defaultdict(int)
@@ -156,13 +193,11 @@ def distribution_history(request):
 
 
 def distribution_detail(request, zone_id, timestamp):
-    # Convert timestamp string to datetime
     try:
         timestamp_date = datetime.strptime(timestamp, '%Y-%m-%d-%H-%M')
     except ValueError:
         raise Http404("Invalid timestamp format")
 
-    # Fetch distributions for the provided zone and timestamp
     distributions = Distribuicao.objects.filter(
         created_at__date=timestamp_date.date(),
         created_at__hour=timestamp_date.hour,
@@ -175,7 +210,6 @@ def distribution_detail(request, zone_id, timestamp):
 
     first_dist = distributions.first()
 
-    # Initialize totals with defaultdict
     totals = {
         'regular': 0,
         'contingencia': 0,
@@ -183,7 +217,6 @@ def distribution_detail(request, zone_id, timestamp):
         'sem_bio': 0
     }
 
-    # Calculate model-specific summaries
     modelo_summary = defaultdict(lambda: {
         'modelo': '',
         'regular': 0,
@@ -195,7 +228,6 @@ def distribution_detail(request, zone_id, timestamp):
 
     # Aggregate data
     for dist in distributions:
-        # Update model-specific totals
         summary = modelo_summary[dist.urna_modelo]
         summary['modelo'] = dist.urna_modelo
         
@@ -236,4 +268,13 @@ def distribution_detail(request, zone_id, timestamp):
     return render(request, 'Logis/distribution_detail.html', context)
 
 
+def zona_list_selection(request):
+    return render(request, 'Logis/zona_list_selection.html')
 
+def home_view(request):
+    context = {
+        'total_municipios': Municipio.objects.count(),
+        'total_zonas': ZonaEleitoral.objects.count(),
+        'total_urnas': Urna.objects.count()
+    }
+    return render(request, 'Logis/home.html', context)

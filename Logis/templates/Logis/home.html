@@ -1,0 +1,99 @@
+{% extends 'Logis/base.html' %}
+
+{% block title %}Início - Logística Eleitoral{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <div class="jumbotron">
+            <h1 class="display-4">Logística Eleitoral</h1>
+            <p class="lead">Sistema de Gerenciamento e Distribuição de Urnas Eleitorais</p>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Municípios</h5>
+            </div>
+            <div class="card-body">
+                <p>Visualize e gerencie informações sobre municípios cadastrados.</p>
+                <a href="{% url 'municipio_list' %}" class="btn btn-primary">Listar Municípios</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Distribuição de Urnas</h5>
+            </div>
+            <div class="card-body">
+                <p>Distribua urnas para diferentes zonas eleitorais e seções.</p>
+                <a href="{% url 'distribuicao_page' %}" class="btn btn-success">Distribuir Urnas</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <div class="card-header">
+                <h5 class="card-title">Gerenciamento de Dados</h5>
+            </div>
+            <div class="card-body">
+                <p>Faça upload de dados de Excel para atualizar o sistema.</p>
+                <a href="{% url 'uploadFile' %}" class="btn btn-warning">Upload de Dados</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Estatísticas Rápidas</h5>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total de Municípios
+                        <span class="badge badge-primary badge-pill">{{ total_municipios }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total de Zonas Eleitorais
+                        <span class="badge badge-success badge-pill">{{ total_zonas }}</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Total de Urnas
+                        <span class="badge badge-warning badge-pill">{{ total_urnas }}</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <h5 class="card-title">Ações Rápidas</h5>
+            </div>
+            <div class="card-body">
+                <div class="list-group">
+                    <a href="{% url 'secao_list' %}" class="list-group-item list-group-item-action">
+                        Listar Seções Eleitorais
+                    </a>
+                    <a href="{% url 'zona_list_selection' %}" class="list-group-item list-group-item-action">
+                        Visualizar Zonas Eleitorais
+                    </a>
+                    <a href="{% url 'distribution_history' %}" class="list-group-item list-group-item-action">
+                        Histórico de Distribuições
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
