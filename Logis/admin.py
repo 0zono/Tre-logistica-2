@@ -104,8 +104,8 @@ class DistribuicaoAdmin(admin.ModelAdmin):
     urna_info_display.short_description = "Informações da Urna"
 
     def get_readonly_fields(self, request, obj=None):
-        # Make all fields readonly if this is an existing object
-        if obj:  # editing an existing object
+        
+        if obj:  
             return self.readonly_fields + (
                 'stock_zone',
                 'distributed_by',

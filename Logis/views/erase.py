@@ -4,7 +4,7 @@ from ..models import Municipio, ZonaEleitoral, Secao, MunicipioZona, Urna, Distr
 
 def delete_all_data(request):
     if request.method == "POST":
-        # Perform deletion
+        # VIEW PARA LIMPAR POR COMPLETO O SISTEMA, INCLUINDO HISTÓRICO
         Municipio.objects.all().delete()
         ZonaEleitoral.objects.all().delete()
         Secao.objects.all().delete()
@@ -12,8 +12,8 @@ def delete_all_data(request):
         Urna.objects.all().delete()
         Distribuicao.objects.all().delete()
         
-        # Add success message and redirect
+        
         messages.success(request, "Todos os dados foram apagados com sucesso!")
-        return redirect('secao_list')  # Redirect to a "home" or dashboard page (adjust as needed)
+        return redirect('secao_list')  
 
     return render(request, 'Logis/delete_all_data.html')

@@ -57,14 +57,14 @@ class Distribuicao(models.Model):
     distributed_by = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
-    # Updated target_zones field
-    target_zones = models.CharField(max_length=255)  # Store zone names or IDs as a comma-separated string
+    
+    target_zones = models.CharField(max_length=255)  # Armazena o NOME da zona para qual a urna foi distribuida
 
-    # Fields for urna information
-    urna_modelo = models.CharField(max_length=4)  # Model of the urna
-    urna_bio = models.BooleanField()  # If the urna supports biometrics
-    urna_contingencia = models.BooleanField()  # If the urna is for contingency
-    urna_quantity = models.IntegerField()  # Quantity of urnas distributed
+    # Campos de informação de urna. Não podem ser resolvidos por uma chave estrangeira pois a tabela pode não existir mais no sistema.
+    urna_modelo = models.CharField(max_length=4)  
+    urna_bio = models.BooleanField()  
+    urna_contingencia = models.BooleanField() 
+    urna_quantity = models.IntegerField() 
 
     def __str__(self):
         return f"Distribuição {self.created_at} - Zona {self.stock_zone.nome}"

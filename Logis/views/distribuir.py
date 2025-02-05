@@ -5,7 +5,7 @@ from django.db import transaction
 from ..models import ZonaEleitoral, Urna, Distribuicao
 import logging
 
-# Configure logging
+# configuração para logger
 logging.basicConfig(
     filename='distribuicao_urnas.log',
     level=logging.INFO,

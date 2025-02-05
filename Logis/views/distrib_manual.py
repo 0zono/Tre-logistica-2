@@ -7,7 +7,7 @@ from ..models import ZonaEleitoral, Urna, Distribuicao
 import json
 import logging
 
-# Configure logging
+
 logger = logging.getLogger(__name__)
 
 def get_stock():

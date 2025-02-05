@@ -20,7 +20,7 @@ def urna_list(request):
             Q(zona_eleitoral__nome__icontains=query)
         )
 
-    # Use aggregate for the total before pagination
+    
     total_urnas = urna_queryset.aggregate(total=Sum('qtd'))['total'] or 0
 
     paginator = Paginator(urna_queryset, 10)
@@ -29,7 +29,7 @@ def urna_list(request):
     
     current_page = urnas.number
     total_pages = paginator.num_pages
-    # Pagination only works with pandas module
+    
     page_range = [
         x for x in range(current_page - 2, current_page + 3)
         if 1 <= x <= total_pages
@@ -63,7 +63,7 @@ def secao_list(request):
     page_number = request.GET.get('page')
     secoes = paginator.get_page(page_number)
 
-    # Calculate the visible page range
+    
     current_page = secoes.number
     total_pages = paginator.num_pages
 
@@ -81,16 +81,16 @@ def secao_list(request):
 
 
 def zona_list(request):
-    # Get listing type from GET parameter, default to 'table'
+    
     listing_type = request.GET.get('type', 'table')
     
-    # Retrieve all zones
+    
     zonas = ZonaEleitoral.objects.exclude(nome='ZEestoque')
     
-    # Calculate total sections
+    
     total_secoes = sum(zona.qtdSecoes for zona in zonas)
     
-    # Calculate total regular and contingency urnas for each model
+    
     total_urnas_2022 = Urna.objects.filter(modelo='2022', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
     total_urnas_2020 = Urna.objects.filter(modelo='2020', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
     total_urnas_2015 = Urna.objects.filter(modelo='2015', contingencia=False).aggregate(total=models.Sum('qtd'))['total'] or 0
@@ -114,7 +114,7 @@ def zona_list(request):
         'total_contingencia_2013': total_contingencia_2013,
     }
     
-    # Render the appropriate template based on listing type
+    
     if listing_type == 'card':
         return render(request, 'Logis/zona_list.html', context)
     else:
@@ -122,7 +122,7 @@ def zona_list(request):
 
 def zona_list2(request):
     zonas = ZonaEleitoral.objects.all()
-    total_secoes = sum(zona.qtdSecoes for zona in zonas)  # Calculate the total
+    total_secoes = sum(zona.qtdSecoes for zona in zonas)  
     return render(request, 'Logis/zona_list2.html', {'zonas': zonas, 'total_secoes': total_secoes})
 
 def distribution_history(request):
@@ -142,7 +142,7 @@ def distribution_history(request):
             current_group.append(dist)
         else:
             if current_group:
-                # Calculate totals for the group
+                
                 regular_totals = defaultdict(int)
                 contingency_totals = defaultdict(int)
                 total_urnas = 0
@@ -226,7 +226,7 @@ def distribution_detail(request, zone_id, timestamp):
         'total': 0
     })
 
-    # Aggregate data
+    
     for dist in distributions:
         summary = modelo_summary[dist.urna_modelo]
         summary['modelo'] = dist.urna_modelo
@@ -247,14 +247,14 @@ def distribution_detail(request, zone_id, timestamp):
             
         summary['total'] += dist.urna_quantity
 
-    # Convert modelo_summary to sorted list
+    
     modelo_summary = sorted(
         modelo_summary.values(),
         key=lambda x: x['modelo'],
         reverse=True
     )
 
-    # Calculate total urnas
+    
     total_urnas = sum(model['total'] for model in modelo_summary)
 
     context = {
@@ -282,22 +282,22 @@ def home_view(request):
 def reset_estoque(request):
     if request.method == 'POST':
         try:
-            # Get quantities from POST data
+            
             modelo_2022 = int(request.POST.get('modelo_2022', 0))
             modelo_2020 = int(request.POST.get('modelo_2020', 0))
             modelo_2015 = int(request.POST.get('modelo_2015', 0))
             modelo_2013 = int(request.POST.get('modelo_2013', 0))
             
-            # Find the stock zone
+            
             estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
             
-            # Reset urnas for each model
+            
             urnas_2022 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2022')
             urnas_2020 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2020')
             urnas_2015 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2015')
             urnas_2013 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2013')
             
-            # Update quantities
+            
             urnas_2022.update(qtd=modelo_2022)
             urnas_2020.update(qtd=modelo_2020)
             urnas_2015.update(qtd=modelo_2015)
@@ -313,7 +313,7 @@ def reset_estoque(request):
                 'message': 'Zona de estoque não encontrada.'
             }, status=404)
     
-    # Get current stock quantities for each model
+    
     try:
         estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
         current_stock = {
