@@ -17,6 +17,7 @@ urlpatterns = [
     path('distribuir-urnas-manual/', distrib_manual.manual_distribuir_urnas, name='manual_distribuir_urnas'),
     path('distributions/<str:zone_id>/<str:timestamp>/', entidades.distribution_detail, name='distribution_detail'),
     path('finalize-distribution/', distrib_manual.finalize_distribution, name='finalize_distribution'),
+    path('reset-estoque/', entidades.reset_estoque, name='reset_estoque'),
     path('', entidades.home_view, name="home"),
 
 ]

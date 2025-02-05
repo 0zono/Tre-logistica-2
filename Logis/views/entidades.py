@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.http import Http404
+from django.http import Http404, JsonResponse
 from datetime import datetime
 from ..models import Urna, Municipio, Secao, ZonaEleitoral, Distribuicao
 from django.core.paginator import Paginator
@@ -278,3 +278,51 @@ def home_view(request):
         'total_urnas': Urna.objects.count()
     }
     return render(request, 'Logis/home.html', context)
+
+def reset_estoque(request):
+    if request.method == 'POST':
+        try:
+            # Get quantities from POST data
+            modelo_2022 = int(request.POST.get('modelo_2022', 0))
+            modelo_2020 = int(request.POST.get('modelo_2020', 0))
+            modelo_2015 = int(request.POST.get('modelo_2015', 0))
+            modelo_2013 = int(request.POST.get('modelo_2013', 0))
+            
+            # Find the stock zone
+            estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
+            
+            # Reset urnas for each model
+            urnas_2022 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2022')
+            urnas_2020 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2020')
+            urnas_2015 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2015')
+            urnas_2013 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2013')
+            
+            # Update quantities
+            urnas_2022.update(qtd=modelo_2022)
+            urnas_2020.update(qtd=modelo_2020)
+            urnas_2015.update(qtd=modelo_2015)
+            urnas_2013.update(qtd=modelo_2013)
+            
+            return JsonResponse({
+                'status': 'success', 
+                'message': f'Estoque resetado: 2022: {modelo_2022}, 2020: {modelo_2020}, 2015: {modelo_2015}, 2013: {modelo_2013}'
+            })
+        except ZonaEleitoral.DoesNotExist:
+            return JsonResponse({
+                'status': 'error', 
+                'message': 'Zona de estoque não encontrada.'
+            }, status=404)
+    
+    # Get current stock quantities for each model
+    try:
+        estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
+        current_stock = {
+            '2022': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2022').aggregate(total=Sum('qtd'))['total'] or 0,
+            '2020': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2020').aggregate(total=Sum('qtd'))['total'] or 0,
+            '2015': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2015').aggregate(total=Sum('qtd'))['total'] or 0,
+            '2013': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2013').aggregate(total=Sum('qtd'))['total'] or 0
+        }
+    except ZonaEleitoral.DoesNotExist:
+        current_stock = {'2022': 0, '2020': 0, '2015': 0, '2013': 0}
+    
+    return render(request, 'Logis/reset_estoque.html', {'current_stock': current_stock})
