@@ -50,8 +50,17 @@ Motores de template, usados para desenvolver o template
 4. Instalar Jinja e Jinja2
 ```
 
-### 5.
+### 5. Instalar Pandas
 ```sh
 4. Instalar Pandas
 pip install pandas
 ```
+
+### 6. Instalar openpyxl 
+```sh
+4. Instalar Pandas
+pip install openpyxl
+```
+
+
+## Uso:
