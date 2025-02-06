@@ -282,47 +282,59 @@ def home_view(request):
 def reset_estoque(request):
     if request.method == 'POST':
         try:
-            
+            # Retrieve the quantities from the request
             modelo_2022 = int(request.POST.get('modelo_2022', 0))
             modelo_2020 = int(request.POST.get('modelo_2020', 0))
             modelo_2015 = int(request.POST.get('modelo_2015', 0))
             modelo_2013 = int(request.POST.get('modelo_2013', 0))
-            
-            
+
+            # Fetch the ZEestoque zone (assuming it always exists)
             estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
-            
-            
-            urnas_2022 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2022')
-            urnas_2020 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2020')
-            urnas_2015 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2015')
-            urnas_2013 = Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2013')
-            
-            
-            urnas_2022.update(qtd=modelo_2022)
-            urnas_2020.update(qtd=modelo_2020)
-            urnas_2015.update(qtd=modelo_2015)
-            urnas_2013.update(qtd=modelo_2013)
-            
+
+            # Define models and their quantities
+            modelos = {
+                '2022': modelo_2022,
+                '2020': modelo_2020,
+                '2015': modelo_2015,
+                '2013': modelo_2013,
+            }
+
+            # Ensure each urna entry exists, updating or creating as needed
+            for modelo, quantidade in modelos.items():
+                urna, created = Urna.objects.get_or_create(
+                    zona_eleitoral=estoque_zone, modelo=modelo,
+                    defaults={'qtd': quantidade}
+                )
+                if not created:
+                    urna.qtd = quantidade
+                    urna.save()
+
             return JsonResponse({
-                'status': 'success', 
+                'status': 'success',
                 'message': f'Estoque resetado: 2022: {modelo_2022}, 2020: {modelo_2020}, 2015: {modelo_2015}, 2013: {modelo_2013}'
             })
-        except ZonaEleitoral.DoesNotExist:
+        except Exception as e:
             return JsonResponse({
-                'status': 'error', 
-                'message': 'Zona de estoque não encontrada.'
-            }, status=404)
-    
-    
+                'status': 'error',
+                'message': f'Erro: {str(e)}'
+            }, status=500)
+
     try:
+        # Fetch the ZEestoque zone (assuming it always exists)
         estoque_zone = ZonaEleitoral.objects.get(nome='ZEestoque')
+
+        # Fetch current stock quantities
         current_stock = {
-            '2022': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2022').aggregate(total=Sum('qtd'))['total'] or 0,
-            '2020': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2020').aggregate(total=Sum('qtd'))['total'] or 0,
-            '2015': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2015').aggregate(total=Sum('qtd'))['total'] or 0,
-            '2013': Urna.objects.filter(zona_eleitoral=estoque_zone, modelo='2013').aggregate(total=Sum('qtd'))['total'] or 0
+            modelo: Urna.objects.filter(zona_eleitoral=estoque_zone, modelo=modelo)
+                                .aggregate(total=Sum('qtd'))['total'] or 0
+            for modelo in ['2022', '2020', '2015', '2013']
         }
-    except ZonaEleitoral.DoesNotExist:
-        current_stock = {'2022': 0, '2020': 0, '2015': 0, '2013': 0}
-    
+    except Exception as e:
+        return JsonResponse({
+            'status': 'error',
+            'message': f'Erro ao recuperar estoque: {str(e)}'
+        }, status=500)
+
     return render(request, 'Logis/reset_estoque.html', {'current_stock': current_stock})
+
+

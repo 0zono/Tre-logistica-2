@@ -114,8 +114,12 @@
                             type="number" 
                             v-model.number="contingencyPercentage"
                             class="form-control"
+                            :class="{'is-invalid': !isValidContingency}"
                             min="0"
                             max="100">
+                        <div v-if="!isValidContingency" class="invalid-feedback">
+                            O percentual deve estar entre 0 e 100
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,6 +199,45 @@
             },
             contingencyNeeded() {
                 return Math.ceil(this.currentZone.qtdSecoes * (this.contingencyPercentage / 100))
+            },
+            hasAvailableStock() {
+                return Object.values(this.stock.urnas).some(qty => qty > 0)
+            },
+            isLowStock() {
+                return Object.values(this.remainingStock).some(qty => qty < this.currentZone.qtdSecoes)
+            },
+            availableModels() {
+                return this.urnaModels.filter(model => this.remainingStock[model] >= this.currentZone.qtdSecoes)
+            },
+            hasEnoughStock() {
+                return this.availableModels.length > 0
+            },
+            isValidContingency() {
+                return this.contingencyPercentage >= 0 && this.contingencyPercentage <= 100
+            },
+            getZoneAlertClass() {
+                return {
+                    'alert-danger': !this.hasEnoughStock,
+                    'alert-warning': this.isLowStock,
+                    'alert-info': !this.isLowStock && this.hasEnoughStock
+                }
+            },
+            canProceed() {
+                if (this.mode === 'auto') {
+                    return this.selectedModel && this.isValidContingency && this.hasEnoughStock
+                }
+                return this.isValidTotalDistribution && Object.values(this.errors).every(error => !error)
+            },
+            canFinish() {
+                return this.canProceed && this.currentIndex === this.zones.length - 1
+            },
+            isValidTotalDistribution() {
+                if (this.mode === 'manual') {
+                    const total = Object.values(this.manualDistributions[this.currentZone.id])
+                        .reduce((sum, qty) => sum + (qty || 0), 0)
+                    return total === this.currentZone.qtdSecoes
+                }
+                return true
             }
         },
         methods: {
@@ -235,17 +278,19 @@
         };
         return compatibilityMap[regularModel]?.includes(contingencyModel) || false;
         },nextZone() {
+            if (!this.canProceed) return
+            
             if (this.mode === 'auto') {
                 if (!this.selectedModel || this.remainingStock[this.selectedModel] < this.currentZone.qtdSecoes) {
                     alert('Selecione um modelo válido com quantidade suficiente.');
                     return;
                 }
 
-                // Allocate regular urnas
+                
                 this.remainingStock[this.selectedModel] -= this.currentZone.qtdSecoes;
                 this.manualDistributions[this.currentZone.id][this.selectedModel] = this.currentZone.qtdSecoes;
 
-                // Allocate compatible contingency urnas
+                
                 const contingencyNeeded = this.contingencyNeeded;
                 const compatibleContingencyModels = this.urnaModels.filter(model => 
                     this.isCompatibleUrna(this.selectedModel, model)

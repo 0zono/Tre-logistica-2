@@ -8819,3 +8819,13 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'home_view' not found. 'home_
 2025-02-05 08:31:28,342 - INFO - D:\TreLogistica\TreLogis\Logis\views\entidades.py changed, reloading.
 2025-02-05 08:31:41,904 - INFO - D:\TreLogistica\TreLogis\Logis\views\entidades.py changed, reloading.
 2025-02-05 08:37:39,602 - INFO - Distribuição concluída com sucesso.
+2025-02-06 08:12:27,332 - WARNING - Not Found: /favicon.ico
+2025-02-06 08:13:18,469 - WARNING - Not Found: /upload/Logis/sucess.html
+2025-02-06 08:19:31,485 - INFO - D:\TreLogistica\TreLogis\Logis\views\entidades.py changed, reloading.
+2025-02-06 08:19:53,797 - ERROR - Internal Server Error: /reset-estoque/
+2025-02-06 08:21:17,484 - INFO - D:\TreLogistica\TreLogis\Logis\views\entidades.py changed, reloading.
+2025-02-06 08:21:23,054 - ERROR - Internal Server Error: /reset-estoque/
+2025-02-06 08:22:46,953 - INFO - D:\TreLogistica\TreLogis\Logis\views\entidades.py changed, reloading.
+2025-02-06 08:53:56,261 - INFO - Distribuição concluída com sucesso.
+2025-02-06 08:54:50,185 - INFO - Distribution completed successfully by user admin
+2025-02-06 08:55:33,395 - INFO - Distribuição concluída com sucesso.
