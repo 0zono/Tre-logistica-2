@@ -48,6 +48,8 @@ pip install Django>=5.0.6
 Motores de template, usados para desenvolver o template
 ```sh
 4. Instalar Jinja e Jinja2
+pip install jinja
+pip install jinja2
 ```
 
 ### 5. Instalar Pandas
@@ -64,3 +66,7 @@ pip install openpyxl
 
 
 ## Uso:
+
+### 1: Inserir dados com arquivos
+### 2: definir urnas no estoque
+### 3: Distribuir.
