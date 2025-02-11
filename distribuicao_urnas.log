@@ -8829,3 +8829,383 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'home_view' not found. 'home_
 2025-02-06 08:53:56,261 - INFO - Distribuição concluída com sucesso.
 2025-02-06 08:54:50,185 - INFO - Distribution completed successfully by user admin
 2025-02-06 08:55:33,395 - INFO - Distribuição concluída com sucesso.
+2025-02-06 10:58:49,030 - ERROR - Error rendering distribution page: No ZonaEleitoral matches the given query.
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+Logis.models.ZonaEleitoral.DoesNotExist: ZonaEleitoral matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 82, in manual_distribuir_urnas
+    stock_zona, stock_urnas = get_stock()
+                              ^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 15, in get_stock
+    stock_zona = get_object_or_404(ZonaEleitoral, nome='ZEestoque')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 88, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No ZonaEleitoral matches the given query.
+2025-02-06 10:58:49,065 - ERROR - Internal Server Error: /distribuir-urnas-manual/
+2025-02-06 10:58:58,244 - ERROR - Error rendering distribution page: No ZonaEleitoral matches the given query.
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+Logis.models.ZonaEleitoral.DoesNotExist: ZonaEleitoral matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 82, in manual_distribuir_urnas
+    stock_zona, stock_urnas = get_stock()
+                              ^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 15, in get_stock
+    stock_zona = get_object_or_404(ZonaEleitoral, nome='ZEestoque')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 88, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No ZonaEleitoral matches the given query.
+2025-02-06 10:58:58,245 - ERROR - Internal Server Error: /distribuir-urnas-manual/
+2025-02-06 10:59:33,539 - ERROR - Error rendering distribution page: No ZonaEleitoral matches the given query.
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+Logis.models.ZonaEleitoral.DoesNotExist: ZonaEleitoral matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 82, in manual_distribuir_urnas
+    stock_zona, stock_urnas = get_stock()
+                              ^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 15, in get_stock
+    stock_zona = get_object_or_404(ZonaEleitoral, nome='ZEestoque')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 88, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No ZonaEleitoral matches the given query.
+2025-02-06 10:59:33,540 - ERROR - Internal Server Error: /distribuir-urnas-manual/
+2025-02-06 11:01:46,787 - ERROR - Error rendering distribution page: No ZonaEleitoral matches the given query.
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 86, in get_object_or_404
+    return queryset.get(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+Logis.models.ZonaEleitoral.DoesNotExist: ZonaEleitoral matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 82, in manual_distribuir_urnas
+    stock_zona, stock_urnas = get_stock()
+                              ^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\distrib_manual.py", line 15, in get_stock
+    stock_zona = get_object_or_404(ZonaEleitoral, nome='ZEestoque')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 88, in get_object_or_404
+    raise Http404(
+django.http.response.Http404: No ZonaEleitoral matches the given query.
+2025-02-06 11:01:46,788 - ERROR - Internal Server Error: /distribuir-urnas-manual/
+2025-02-10 10:16:43,606 - INFO - D:\TreLogistica\TreLogis\Logis\urls.py changed, reloading.
+2025-02-10 10:16:48,671 - WARNING - Not Found: /favicon.ico
+2025-02-10 10:25:27,137 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_vizualizar.py changed, reloading.
+2025-02-10 10:25:37,523 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_vizualizar.py changed, reloading.
+2025-02-10 10:26:51,716 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_vizualizar.py changed, reloading.
+2025-02-10 10:27:06,586 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_vizualizar.py changed, reloading.
+2025-02-10 10:27:53,962 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:28:06,370 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:29:06,212 - INFO - D:\TreLogistica\TreLogis\Logis\urls.py changed, reloading.
+2025-02-10 10:29:29,965 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:29:44,300 - WARNING - Not Found: /upload/Logis/upload/geren_sucess.html
+2025-02-10 10:29:57,304 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:30:00,833 - WARNING - Not Found: /upload/Logis/geren_sucess.html
+2025-02-10 10:30:05,536 - WARNING - Not Found: /upload/Logis/geren_sucess.html
+2025-02-10 10:30:23,542 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:30:28,348 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:30:35,733 - WARNING - Not Found: /upload/geren_sucess.html
+2025-02-10 10:31:07,684 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:31:11,737 - ERROR - Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 33, in upload_file
+    return render('Logis/geren_sucess.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: render() missing 1 required positional argument: 'template_name'
+2025-02-10 10:31:24,944 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:31:31,945 - ERROR - Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 33, in upload_file
+    return render(request, 'Logis/geren_sucess.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Logis/geren_sucess.html
+2025-02-10 10:32:56,071 - ERROR - Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 33, in upload_file
+    return render(request, 'Logis/geren_sucess.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: Logis/geren_sucess.html
+2025-02-10 10:33:17,952 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:33:29,694 - WARNING - Not Found: /upload/Logis/geren_sucess.html
+2025-02-10 10:34:43,795 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:34:49,895 - ERROR - Internal Server Error: /upload/success/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: geren_success.html
+2025-02-10 10:35:18,374 - INFO - D:\TreLogistica\TreLogis\Logis\urls.py changed, reloading.
+2025-02-10 10:35:26,910 - ERROR - Internal Server Error: /upload/success/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: geren_success.html
+2025-02-10 10:36:28,673 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:36:34,222 - ERROR - Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 33, in upload_file
+    return render(request, 'Logis/geren_success.html')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+2025-02-10 10:36:45,555 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:36:48,839 - ERROR - Internal Server Error: /upload/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 33, in upload_file
+    return render(request, 'Logis/geren_success.html')
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.
+2025-02-10 10:37:20,776 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:37:29,978 - INFO - D:\TreLogistica\TreLogis\Logis\urls.py changed, reloading.
+2025-02-10 10:37:36,537 - ERROR - Internal Server Error: /success/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: geren_success.html
+2025-02-10 10:38:28,030 - INFO - D:\TreLogistica\TreLogis\Logis\urls.py changed, reloading.
+2025-02-10 10:39:50,271 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:40:01,774 - INFO - D:\TreLogistica\TreLogis\Logis\views\views_upload.py changed, reloading.
+2025-02-10 10:40:07,863 - ERROR - Internal Server Error: /upload/success/
+Traceback (most recent call last):
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\trelogis\Logis\views\views_upload.py", line 40, in success_view
+    return render(request, 'Logis/geren_success.html')  # Ensure this template exists
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\TreLogistica\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'upload' not found. 'upload' is not a valid view function or pattern name.

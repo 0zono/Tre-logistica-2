@@ -35,7 +35,7 @@ def urna_list(request):
         if 1 <= x <= total_pages
     ]
 
-    return render(request, 'Logis/urna_list.html', {
+    return render(request, 'Logis/list_urnas.html', {
         'urnas': urnas,
         'total_urnas': total_urnas,
         'query': query,
@@ -45,7 +45,7 @@ def urna_list(request):
 
 def municipio_list(request):
     municipios = Municipio.objects.all()
-    return render(request, 'Logis/municipio_list.html', {'municipios': municipios})
+    return render(request, 'Logis/list_municipio.html', {'municipios': municipios})
 
 def secao_list(request):
     query = request.GET.get('q', '')
@@ -72,7 +72,7 @@ def secao_list(request):
         if 1 <= x <= total_pages
     ]
 
-    return render(request, 'Logis/secao_list.html', {
+    return render(request, 'Logis/list_secao.html', {
         'secoes': secoes,
         'query': query,
         'page_range': page_range,
@@ -116,9 +116,9 @@ def zona_list(request):
     
     
     if listing_type == 'card':
-        return render(request, 'Logis/zona_list.html', context)
+        return render(request, 'Logis/list_zona_card.html', context)
     else:
-        return render(request, 'Logis/zona_list2.html', context)
+        return render(request, 'Logis/list_zona_tabela.html', context)
 
 def zona_list2(request):
     zonas = ZonaEleitoral.objects.all()
@@ -269,7 +269,7 @@ def distribution_detail(request, zone_id, timestamp):
 
 
 def zona_list_selection(request):
-    return render(request, 'Logis/zona_list_selection.html')
+    return render(request, 'Logis/list_zona_selecao.html')
 
 def home_view(request):
     context = {
@@ -335,6 +335,6 @@ def reset_estoque(request):
             'message': f'Erro ao recuperar estoque: {str(e)}'
         }, status=500)
 
-    return render(request, 'Logis/reset_estoque.html', {'current_stock': current_stock})
+    return render(request, 'Logis/geren_reset_estoque.html', {'current_stock': current_stock})
 
 

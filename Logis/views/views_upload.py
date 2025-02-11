@@ -30,10 +30,15 @@ def upload_file(request):
                     delete_existing_data()
                 import_secoes_data(file_path)
 
-            return redirect('Logis/sucess.html')
+            return redirect('upload_success')  
     else:
         form = UploadFileForm()
-    return render(request, 'Logis/upload.html', {'form': form})
+    return render(request, 'Logis/geren_upload.html', {'form': form})
+
+@login_required
+def success_view(request):
+    return render(request, 'Logis/geren_success.html')  # Ensure this template exists
+
 
 def check_all_tables_have_rows():
     return (

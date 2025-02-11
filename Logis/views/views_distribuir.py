@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-def get_stock_zone(stock_zona_id):
+def get_estoque_deposito(stock_zona_id):
     """Função auxiliar que recebe qual zona é a estoque (entrada do usuário)"""
     try:
         return ZonaEleitoral.objects.get(id=stock_zona_id)
@@ -21,19 +21,19 @@ def get_stock_zone(stock_zona_id):
         logger.error(f"Zona de estoque {stock_zona_id} não encontrada.")
         return None
 
-def calculate_needs(target_zonas):
+def calcular_urnas_necessarias(target_zonas):
     """Calcula a quantidade total de urnas necessárias."""
     total_needed = sum(zona.qtdSecoes for zona in target_zonas)
     total_contingency = sum(int(zona.qtdSecoes * 0.12) for zona in target_zonas)
     return total_needed, total_contingency
 
-def get_stock_inventory(stock_zona):
+def get_invetario_deposito(stock_zona):
     """Cria dicionário com urnas em estoque e suas quantidades.."""
     stock_urnas = Urna.objects.filter(zona_eleitoral=stock_zona).order_by('-modelo')
     stock_inventory = {urna.modelo: urna.qtd for urna in stock_urnas}
     return stock_urnas, stock_inventory
 
-def allocate_urnas(stock_urnas, stock_inventory, zona, needed, is_contingency=False):
+def alocar_urnas(stock_urnas, stock_inventory, zona, needed, is_contingency=False):
     """Checa se a quantidade requerida está disponivel no estoqye"""
     distributions = []
     allocated = False
@@ -46,7 +46,7 @@ def allocate_urnas(stock_urnas, stock_inventory, zona, needed, is_contingency=Fa
             break
     return distributions, allocated
 
-def create_distributions(stock_zona, user, zona, distributions):
+def criar_distribuicao(stock_zona, user, zona, distributions):
     """Armazena distribuicao"""
     for dist in distributions:
         Distribuicao.objects.create(
@@ -74,13 +74,13 @@ def distribuir_urnas(request):
             logger.error("Zona de estoque não selecionada.")
             return JsonResponse({'messages': ['Zona de estoque não selecionada.']}, status=400)
         
-        stock_zona = get_stock_zone(stock_zona_id)
+        stock_zona = get_estoque_deposito(stock_zona_id)
         if not stock_zona:
             return JsonResponse({'messages': ['Zona de estoque não encontrada.']}, status=404)
         
         target_zonas = ZonaEleitoral.objects.exclude(id=stock_zona_id)
-        total_needed, total_contingency = calculate_needs(target_zonas)
-        stock_urnas, stock_inventory = get_stock_inventory(stock_zona)
+        total_needed, total_contingency = calcular_urnas_necessarias(target_zonas)
+        stock_urnas, stock_inventory = get_invetario_deposito(stock_zona)
         total_stock = sum(stock_inventory.values())
         
         if total_stock < (total_needed + total_contingency):
@@ -93,15 +93,15 @@ def distribuir_urnas(request):
                 sorted_zonas = sorted(target_zonas, key=lambda x: x.qtdSecoes, reverse=True)
                 
                 for zona in sorted_zonas:
-                    regular_distributions, allocated = allocate_urnas(stock_urnas, stock_inventory, zona, zona.qtdSecoes)
+                    regular_distributions, allocated = alocar_urnas(stock_urnas, stock_inventory, zona, zona.qtdSecoes)
                     if not allocated:
                         raise ValueError(f"Não foi possível alocar um único modelo para a zona {zona.id}")
                     
-                    contingency_distributions, contingency_allocated = allocate_urnas(stock_urnas, stock_inventory, zona, int(zona.qtdSecoes * 0.12), is_contingency=True)
+                    contingency_distributions, contingency_allocated = alocar_urnas(stock_urnas, stock_inventory, zona, int(zona.qtdSecoes * 0.12), is_contingency=True)
                     if not contingency_allocated:
                         raise ValueError(f"Não foi possível alocar urnas de contingência para a zona {zona.id}")
                     
-                    create_distributions(stock_zona, request.user, zona, regular_distributions + contingency_distributions)
+                    criar_distribuicao(stock_zona, request.user, zona, regular_distributions + contingency_distributions)
                 
                 for urna in stock_urnas:
                     urna.qtd = stock_inventory[urna.modelo]

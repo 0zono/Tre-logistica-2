@@ -10,24 +10,24 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def get_stock():
+def get_inventario_deposito():
     """Função auxiliar que recebe info sobre urnas no estoque"""
     stock_zona = get_object_or_404(ZonaEleitoral, nome='ZEestoque')
     stock_urnas = {urna.modelo: urna for urna in Urna.objects.filter(zona_eleitoral=stock_zona)}
     return stock_zona, stock_urnas
 
-def validate_stock(required_stock, stock_urnas):
-    """Checa se a quantidade requerida está disponivel no estoqye"""
+def validar_estoque(required_stock, stock_urnas):
+    """Checa se a quantidade requerida está disponivel no estoque"""
     for model, required_qty in required_stock.items():
         stock_urna = stock_urnas.get(model)
         if not stock_urna or required_qty > stock_urna.qtd:
             available_qty = stock_urna.qtd if stock_urna else 0
             raise ValidationError(f'Estoque insuficiente para modelo {model}. Disponível: {available_qty}, Necessário: {required_qty}')
 
-def process_distribution(data, user):
+def processar_distribuicao(data, user):
     """Processa a distribuição."""
     with transaction.atomic():
-        stock_zona, stock_urnas = get_stock()
+        stock_zona, stock_urnas = get_inventario_deposito()
         
         if not isinstance(data, dict) or 'zones' not in data:
             raise ValidationError('Formato de dados inválido')
@@ -41,7 +41,7 @@ def process_distribution(data, user):
                 else:
                     required_stock[model] = required_stock.get(model, 0) + qty
         
-        validate_stock(required_stock, stock_urnas)
+        validar_estoque(required_stock, stock_urnas)
         
         for zone_data in data['zones']:
             zona = get_object_or_404(ZonaEleitoral, id=zone_data['id'])
@@ -70,7 +70,7 @@ def manual_distribuir_urnas(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
-            return JsonResponse(process_distribution(data, request.user))
+            return JsonResponse(processar_distribuicao(data, request.user))
         except ValidationError as e:
             logger.warning(f"Validation error in distribution: {str(e)}")
             return JsonResponse({'error': str(e)}, status=400)
@@ -79,7 +79,7 @@ def manual_distribuir_urnas(request):
             return JsonResponse({'error': 'Erro interno do servidor'}, status=500)
     
     try:
-        stock_zona, stock_urnas = get_stock()
+        stock_zona, stock_urnas = get_inventario_deposito()
         zonas = ZonaEleitoral.objects.exclude(id=stock_zona.id).order_by('id')
         urna_models = list(stock_urnas.keys())
         
@@ -88,19 +88,19 @@ def manual_distribuir_urnas(request):
             'urna_models_json': json.dumps(urna_models),
             'stock_json': json.dumps({'id': stock_zona.id, 'nome': stock_zona.nome, 'urnas': {urna.modelo: urna.qtd for urna in stock_urnas.values()}}),
         }
-        return render(request, 'Logis/manual_distribuicao_urnas.html', context)
+        return render(request, 'Logis/distribuicao_manual.html', context)
     except Exception as e:
         logger.error(f"Error rendering distribution page: {str(e)}", exc_info=True)
         return JsonResponse({'error': 'Erro ao carregar a página'}, status=500)
 
 @login_required
-def finalize_distribution(request):
+def finalizar_distribuicao(request):
     """View que finaliza a distribuição"""
     if request.method != 'POST':
         return JsonResponse({'error': 'Método não permitido'}, status=405)
     try:
         data = json.loads(request.body)
-        return JsonResponse(process_distribution(data, request.user)) #IMPORTANTE
+        return JsonResponse(processar_distribuicao(data, request.user)) #IMPORTANTE
     except ValidationError as e:
         logger.warning(f"Validation error in finalization: {str(e)}")
         return JsonResponse({'error': str(e)}, status=400)
